@@ -1,31 +1,31 @@
-# apollo
+<h1>apollo</h1>
 
-# clone remote main	
-	git clone https://github.com/uclahs-cds/training-kaylynphan.git
+<h3>clone remote main</h3>
+git clone https://github.com/uclahs-cds/training-kaylynphan.git
 
-# make new branch
+<h3>make new branch</h3>
 	git checkout -b <branch-name>
-# switch branches, if necessary
+<h3>switch branches, if necessary<h3>
 	git switch <branch-name>
 
-# make edits
+<h3>make edits</h3>
 
-# preview edits
+<h3>preview edits</h3>
 	cat <filename>
 
-# view version status and git tracking
+<h3>view version status and git tracking</h3>
 	git ls-files
 	git status
 	git log # exit with 'q'
 
-# stage files for commit
+<h3>stage files for commit</h3>
 	git add <filename>
 	git commit -m "<describe-commit>"
 
-# made a mistake?
+<h3>made a mistake?</h3>
 	git reset <filename>
 
-# stage pull request
+<h3>stage pull request</h3>
 	git push origin <branch-name>
 
-# open pull request on GitHub
+<h3>open pull request on GitHub</h3>
