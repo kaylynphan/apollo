@@ -4,9 +4,9 @@
 git clone https://github.com/uclahs-cds/training-kaylynphan.git
 
 <h3>make new branch</h3>
-	git checkout -b <branch-name>
+	git checkout -b BRANCH-NAME
 <h3>switch branches, if necessary<h3>
-	git switch <branch-name>
+	git switch BRANCH-NAME
 
 <h3>make edits</h3>
 
