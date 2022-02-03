@@ -5,7 +5,7 @@ git clone https://github.com/uclahs-cds/training-kaylynphan.git
 
 <h3>make new branch</h3>
 	git checkout -b BRANCH-NAME
-<h3>switch branches, if necessary<h3>
+<h3>switch branches, if necessary</h3>
 	git switch BRANCH-NAME
 
 <h3>make edits</h3>
