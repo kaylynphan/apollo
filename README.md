@@ -11,7 +11,7 @@ git clone https://github.com/uclahs-cds/training-kaylynphan.git
 <h3>make edits</h3>
 
 <h3>preview edits</h3>
-	cat <filename>
+	cat FILE
 
 <h3>view version status and git tracking</h3>
 	git ls-files
@@ -20,7 +20,7 @@ git clone https://github.com/uclahs-cds/training-kaylynphan.git
 
 <h3>stage files for commit</h3>
 	git add <filename>
-	git commit -m "<describe-commit>"
+	git commit -m DESCRIPTION
 
 <h3>made a mistake?</h3>
 	git reset <filename>
