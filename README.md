@@ -1,7 +1,7 @@
 <h1>apollo</h1>
 
 <h3>clone remote main</h3>
-git clone https://github.com/uclahs-cds/training-kaylynphan.git
+git clone https://github.com/kaylynphan/apollo.git
 
 <h3>make new branch</h3>
 	git checkout -b BRANCH-NAME
@@ -14,18 +14,20 @@ git clone https://github.com/uclahs-cds/training-kaylynphan.git
 	cat FILE
 
 <h3>view version status and git tracking</h3>
-	git ls-files
-	git status
-	git log # exit with 'q'
+	<ul> 
+    	<li>git ls-files # view files tracked by git</li>
+		<li>git status # see current working branch and tracked changes</li>
+		<li>git log # see commit history</li>
+	</ul>
 
 <h3>stage files for commit</h3>
 	git add <filename>
 	git commit -m DESCRIPTION
 
 <h3>made a mistake?</h3>
-	git reset <filename>
+	git reset FILENAME
 
 <h3>stage pull request</h3>
-	git push origin <branch-name>
+	git push origin BRANCH-NAME
 
-<h3>open pull request on GitHub</h3>
+<h3>open pull request on GitHub, compare changes and merge</h3>
