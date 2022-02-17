@@ -29,3 +29,6 @@ git clone https://github.com/uclahs-cds/training-kaylynphan.git
 	git push origin <branch-name>
 
 <h3>open pull request on GitHub</h3>
+
+In order to run the search, you need to have "react-router-dom" and "react-icons" installed.
+You can use npm "..." to install
