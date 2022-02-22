@@ -5,7 +5,7 @@ import './RatingDropdown.css'
 
 function Score(props) {
     return (
-        <button className="score" onClick = {props.onClick}>
+        <button class="score" onClick = {props.onClick}>
             {props.value}
         </button>
     )
@@ -43,7 +43,7 @@ function Dropdown() {
     return (
         <div>
             <DropdownButton onClick={() => handleClick(-1)}/>
-            <div>
+            <div class="scoreList">
                 {renderScore(1)}
                 {renderScore(2)}
                 {renderScore(3)}
@@ -53,7 +53,7 @@ function Dropdown() {
                 {renderScore(7)}
                 {renderScore(8)}
                 {renderScore(9)}
-                {renderScore(10)} 
+                {renderScore(10)}   
             </div>
         </div>
     )
