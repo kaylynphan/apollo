@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import './App.css';
 import Search from './search';
 import Announcer from './announcer';
-import RatingDropdown from './RatingDropdown.js'
-import Like from './Like'
+import './Home.css'
 
 const posts = [
     { id: '1', name: 'This first post is about React' },
@@ -25,7 +23,7 @@ const filterPosts = (posts, query) => {
     });
 };
 
-const App = () => {
+const Home = () => {
     const { search } = window.location;
     const query = new URLSearchParams(search).get('s');
     const [searchQuery, setSearchQuery] = useState(query || '');
@@ -33,10 +31,7 @@ const App = () => {
 
     return (
         <Router>
-            <div>
-                <Like />
-            </div>
-            <div className="App">
+            <div className="Home">
                 <Announcer message={`${filteredPosts.length} posts`} />
                 
                 <Search
@@ -49,16 +44,13 @@ const App = () => {
                         <li key={post.id}>{post.name}</li>
                     ))}
                 </ul>
-                <div>
-                      <RatingDropdown />
-                </div>
-                
+
             </div>
         </Router>
     );
 };
 
-export default App;
+export default Home;
 
 //deleted logo from app, can add again, under Announcer but before Search
 //<img src={logo} className="App-logo" alt="logo" />
