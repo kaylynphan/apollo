@@ -1,10 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
+import './RatingDropdown.css'
 
 function Score(props) {
     return (
-        <button onClick = {props.onCLick}>
+        <button className="score" onClick = {props.onClick}>
             {props.value}
         </button>
     )
@@ -22,20 +23,21 @@ function Dropdown() {
     const [display, setDisplay] = useState('none');
 
     function handleClick(i) {
-        console.log("Click");
-        if (display =='none') {
+        if (i === -1) {
+            console.log("Toggle");
+        } else {
+            console.log("Clicked on " + i);
+        }
+        if (display === 'none') {
             setDisplay('block');
         } else {
             setDisplay('none');
-        }
-        if (i != -1) {
-            console.log("Selected score " + i);
         }
     }
 
     function renderScore(i) {
         return (
-            <Score value={i} onClick={() => handleClick(0)}/>
+            <Score value={i} onClick={() => handleClick(i)}/>
         );
     }
     return (
@@ -51,7 +53,7 @@ function Dropdown() {
                 {renderScore(7)}
                 {renderScore(8)}
                 {renderScore(9)}
-                {renderScore(10)}
+                {renderScore(10)} 
             </div>
         </div>
     )
