@@ -52,7 +52,6 @@ const App = () => {
         </Router>
     );
 };
->>>>>>> 5510c4fcb9d02193ea4668c038af37e03b20f0fc
 
 export default App;
 
