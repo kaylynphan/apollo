@@ -30,4 +30,7 @@ git clone https://github.com/kaylynphan/apollo.git
 <h3>stage pull request</h3>
 	git push origin BRANCH-NAME
 
-<h3>open pull request on GitHub, compare changes and merge</h3>
+<h3>open pull request on GitHub</h3>
+
+In order to run the search, you need to have "react-router-dom" and "react-icons" installed.
+You can use npm "..." to install
