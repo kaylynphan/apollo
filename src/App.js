@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Search from './search';
 import Announcer from './announcer';
+import RatingDropdown from './RatingDropdown.js'
 
 const posts = [
     { id: '1', name: 'This first post is about React' },
@@ -44,7 +45,9 @@ const App = () => {
                         <li key={post.id}>{post.name}</li>
                     ))}
                 </ul>
-
+                <div>
+                      <RatingDropdown />
+                </div>
             </div>
         </Router>
     );
