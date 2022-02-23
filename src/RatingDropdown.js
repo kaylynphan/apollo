@@ -5,7 +5,7 @@ import './RatingDropdown.css'
 
 function Score(props) {
     return (
-        <button class="score" onClick = {props.onClick}>
+        <button className="score" onClick = {props.onClick}>
             {props.value}
         </button>
     )
