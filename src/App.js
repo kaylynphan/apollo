@@ -6,6 +6,7 @@ import Search from './search';
 import Announcer from './announcer';
 import RatingDropdown from './RatingDropdown.js'
 import Like from './Like'
+import Form from './Form'
 
 const posts = [
     { id: '1', name: 'This first post is about React' },
@@ -35,6 +36,7 @@ const App = () => {
         <Router>
             <div>
                 <Like />
+                <Form />
             </div>
             <div className="App">
                 <Announcer message={`${filteredPosts.length} posts`} />
