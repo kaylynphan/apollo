@@ -43,7 +43,7 @@ function Dropdown() {
     return (
         <div>
             <DropdownButton onClick={() => handleClick(-1)}/>
-            <div class="scoreList">
+            <div className="scoreList">
                 {renderScore(1)}
                 {renderScore(2)}
                 {renderScore(3)}
