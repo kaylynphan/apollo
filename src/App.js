@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
-import Search from './search';
+import SearchBar from './SearchBar';
 import Announcer from './announcer';
 import RatingDropdown from './RatingDropdown.js';
 import Post from './Post';
@@ -42,7 +42,7 @@ const App = () => {
             </div>
             <div className="App">
                 <Announcer message={`${filteredPosts.length} posts`} />
-                <Search
+                <SearchBar
                     searchQuery={searchQuery}
                     setSearchQuery={setSearchQuery}
                 />
