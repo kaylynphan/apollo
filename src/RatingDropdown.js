@@ -13,7 +13,7 @@ function Score(props) {
 
 function DropdownButton(props) {
     return (  
-        <button onClick = {props.onClick}>
+        <button className="dropdown" onClick = {props.onClick}>
             DropdownButton
         </button>
     )
@@ -40,20 +40,21 @@ function Dropdown() {
             <Score value={i} onClick={() => handleClick(i)}/>
         );
     }
+
     return (
         <div>
             <DropdownButton onClick={() => handleClick(-1)}/>
-            <div class="scoreList">
-                {renderScore(1)}
-                {renderScore(2)}
+            <div className="scoreList" style={{display:display}}>
+                {renderScore(1)} 
+                {renderScore(2)} 
                 {renderScore(3)}
-                {renderScore(4)}
-                {renderScore(5)}
-                {renderScore(6)}
+                {renderScore(4)} 
+                {renderScore(5)} <br/>
+                {renderScore(6)} 
                 {renderScore(7)}
-                {renderScore(8)}
+                {renderScore(8)} 
                 {renderScore(9)}
-                {renderScore(10)}   
+                {renderScore(10)}  
             </div>
         </div>
     )

@@ -1,11 +1,19 @@
 .score {
-    background-color: white;
+    background-color: IndianRed;
     border: 1px solid #999;
-    padding: 0;
+    padding: 10;
 }
 
 .scoreList {
     display: block;
     align-items: center;
     padding: 10px 20px;
+}
+
+.dropdown{
+    color: white;
+    background-color: salmon;
+    border-radius: 5px;
+    padding: 5px;
+    width: max-content;
 }
