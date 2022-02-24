@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Search from './search';
 import Announcer from './announcer';
-import RatingDropdown from './RatingDropdown.js'
-import Post from './Post'
-import Form from './Form'
+import RatingDropdown from './RatingDropdown.js';
+import Post from './Post';
+import Form from './Form';
+import ArtistProfile from './ArtistProfile';
 
 const posts = [
     { id: '1', name: 'This first post is about React' },
@@ -37,10 +38,10 @@ const App = () => {
             <div>
                 <Post />
                 <Form />
+                <ArtistProfile />
             </div>
             <div className="App">
                 <Announcer message={`${filteredPosts.length} posts`} />
-                
                 <Search
                     searchQuery={searchQuery}
                     setSearchQuery={setSearchQuery}
@@ -54,7 +55,6 @@ const App = () => {
                 <div>
                       <RatingDropdown />
                 </div>
-                
             </div>
         </Router>
     );
