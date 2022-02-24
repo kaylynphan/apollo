@@ -5,7 +5,7 @@ import './App.css';
 import Search from './search';
 import Announcer from './announcer';
 import RatingDropdown from './RatingDropdown.js'
-import Like from './Like'
+import Post from './Post'
 import Form from './Form'
 
 const posts = [
@@ -35,7 +35,7 @@ const App = () => {
     return (
         <Router>
             <div>
-                <Like />
+                <Post />
                 <Form />
             </div>
             <div className="App">
