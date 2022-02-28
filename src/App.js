@@ -1,38 +1,26 @@
-import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import './App.css';
-import Search from './Search';
-import RatingDropdown from './RatingDropdown.js';
-import Post from './Post';
-import Form from './Form';
-import ArtistProfile from './ArtistProfile';
+import "./App.css"
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
+import Home from "./Home"
+import Homepg from "./Homepg"
+import Login from "./Login"
+import { useState } from "react"
 
 
-
-const App = () => {
-    /*
-    const { search } = window.location;
-    const query = new URLSearchParams(search).get('s');
-    const [searchQuery, setSearchQuery] = useState(query || '');
-    const filteredPosts = filterPosts(posts, searchQuery);
-    */
+function App (){
+    const [isAuth, setIsAuth] = useState(false);
     return (
-        <Router>
-            <div className="App">
-                <Post />
-                <Form />
-                <ArtistProfile />
-                <Search/>
-                <div>
-                      <RatingDropdown />
-                </div>
-            </div>
-        </Router>
+    <Router>
+        <nav>
+            <Link to="/"> Homepg </ Link>
+            <Link to="/login">Login</Link>
+        </ nav>
+        <Routes>
+            <Route path="/" element={<Homepg />} />
+            <Route path="/login" element={<Login setIsAuth={setIsAuth}/>} />
+        </Routes>
+    </ Router>
     );
-};
+
+}
 
 export default App;
-
-//deleted logo from app, can add again, under Announcer but before Search
-//<img src={logo} className="App-logo" alt="logo" />
