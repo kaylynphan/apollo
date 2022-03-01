@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 import Announcer from './announcer';
 import albums from "./albums.json"
@@ -90,7 +90,7 @@ const Search = () => {
                
           
          	<div key={post.id} >
-                 <a href="/artist" class="albumtitle">{post.name}</a>
+                 <Link to="/artist" class="albumtitle" state={{artist: post.artist}}>{post.artist}</Link>
              </div>
              
         	))}
