@@ -1,5 +1,4 @@
 import React from "react";
-import albums from "./Search"
 import ArtistProfile from "./ArtistProfile"
 import "./App.css"
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
@@ -7,11 +6,11 @@ import { useState } from "react"
 import { signOut } from 'firebase/auth'
 import {auth} from "./firebase"
 import Home from "./Home"
-import Homepg from "./Homepg"
 import Login from "./Login"
 import Form from "./Form"
+import ReviewForm from "./ReviewForm";
 
-function Album(){
+function AristPage(props){
     const [isAuth, setIsAuth] = useState(false);
     const signUserOut = () => {
         signOut(auth).then(() => {
@@ -23,11 +22,11 @@ function Album(){
     return (
     <div>
         <ArtistProfile />
-        <Form />
+        <ReviewForm />
     </div>
         
      
     );
 }
 
-export default Album;
+export default AristPage;

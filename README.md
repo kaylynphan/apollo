@@ -34,3 +34,6 @@ git clone https://github.com/kaylynphan/apollo.git
 
 In order to run the search, you need to have "react-router-dom" and "react-icons" installed.
 You can use npm "..." to install
+
+npm install @mui/material @emotion/react @emotion/styled
+
