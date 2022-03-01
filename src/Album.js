@@ -9,6 +9,7 @@ import {auth} from "./firebase"
 import Home from "./Home"
 import Homepg from "./Homepg"
 import Login from "./Login"
+import Form from "./Form"
 
 function Album(){
     const [isAuth, setIsAuth] = useState(false);
@@ -21,12 +22,8 @@ function Album(){
     }
     return (
     <div>
-        <Routes>
-            <Route path="/login" element={<Login setIsAuth={setIsAuth}/>} />
-            
-        </Routes>
         <ArtistProfile />
-    
+        <Form />
     </div>
         
      
