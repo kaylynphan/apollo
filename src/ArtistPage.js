@@ -10,8 +10,10 @@ import Login from "./Login"
 import Form from "./Form"
 import ReviewForm from "./ReviewForm";
 import ReviewPost from "./ReviewPost";
+import albums from "./albums.json";
+import reviews from "./reviews.json";
 
-function AristPage(props){
+function ArtistPage(props){
     const [isAuth, setIsAuth] = useState(false);
     const signUserOut = () => {
         signOut(auth).then(() => {
@@ -21,14 +23,12 @@ function AristPage(props){
         })
     }
     return (
-    <div>
-        <ArtistProfile />
-        <ReviewForm />
-        <ReviewPost />
-    </div>
-        
-     
+        <div>
+            <ArtistProfile artistName={props.artistName}/>
+            <ReviewForm artistName={props.artistName}/>
+            <ReviewPost artistName={props.artistName}/>
+        </div>
     );
 }
 
-export default AristPage;
+export default ArtistPage;

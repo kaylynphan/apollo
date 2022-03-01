@@ -53,7 +53,7 @@ function AlbumRating() {
     );
 }
 
-function ReviewForm() {
+function ReviewForm(props) {
     return (
         <Paper elevation={3} sx={{ width: 400, p: 3 }}>
             <Typography variant="h4">Submit a Review</Typography>
@@ -61,8 +61,8 @@ function ReviewForm() {
                 <TextField 
                     disabled
                     id="outlined-disabled" 
-                    label="Artist" 
-                    defaultValue="Artist"
+                    label={props.artistName}
+                    defaultValue={props.artistName}
                     variant="outlined"
                     fontsize
                     sx={{ width: '20ch' }} 
