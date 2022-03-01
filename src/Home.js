@@ -7,6 +7,7 @@ import RatingDropdown from './RatingDropdown.js';
 import Post from './Post';
 import Form from './Form';
 import ArtistProfile from './ArtistProfile';
+import {firestore} from './firebase'
 
 
 
@@ -18,17 +19,15 @@ const Home = () => {
     const filteredPosts = filterPosts(posts, searchQuery);
     */
     return (
-        <Router>
+        
             <div className="Home">
-                <Post />
-                <Form />
-                <ArtistProfile />
+                
                 <Search/>
                 <div>
                       <RatingDropdown />
                 </div>
             </div>
-        </Router>
+        
     );
 };
 
