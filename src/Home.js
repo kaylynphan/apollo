@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import SearchBar from './SearchBar';
 import Announcer from './announcer';
 import albums from "./albums.json"
 
@@ -13,8 +12,52 @@ import Form from './Form';
 import ArtistProfile from './ArtistProfile';
 import {firestore} from './firebase'
 
-const posts = albums;
+import { useNavigate } from 'react-router-dom';
+import { FaSearch } from 'react-icons/fa';
 
+
+//////////////////////////////////////////////////////////
+//SEARCHBAR COMPONENT
+//////////////////////////////////////////////////////////
+const SearchBar = ({ searchQuery, setSearchQuery }) => {
+    const history = useNavigate();
+    const onSubmit = (e) => {
+        history.push(`?s=${searchQuery}`);
+        e.preventDefault();
+    };
+
+    return (
+        <form
+            action="/"
+            method="get"
+            autoComplete="off"
+            onSubmit={onSubmit}
+            
+        >
+            <label htmlFor="header-search">
+                <span className="visually-hidden">
+                    Search reviews 
+                </span>
+            </label>
+            <input
+                value={searchQuery}
+                onInput={(e) => setSearchQuery(e.target.value)}
+                type="text"
+                id="header-search"
+                placeholder="Enter an album you wish to see a review for"
+                name="s"
+            />
+
+            <button type="submit"><FaSearch/></button>
+            
+        </form>
+    );
+};
+
+//////////////////////////////////////////////////////////
+//SEARCH COMPONENT
+//////////////////////////////////////////////////////////
+const posts = albums;
 const filterPosts = (posts, query) => {
     if (!query) {
         return posts;
@@ -59,6 +102,9 @@ const Search = () => {
 
 }
 
+//////////////////////////////////////////////////////////
+//HOMEPAGE COMPONENT
+//////////////////////////////////////////////////////////
 const Home = () => {
     /*
     const { search } = window.location;
