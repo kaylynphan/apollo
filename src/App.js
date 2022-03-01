@@ -39,7 +39,7 @@ function App (){
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login setIsAuth={setIsAuth}/>} />
-            <Route path="/album" element={<Album />}/>
+            <Route path="/album/*" element={<Album />}/>
         </Routes>
     </ Router>
     );
