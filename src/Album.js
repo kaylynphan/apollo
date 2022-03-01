@@ -7,7 +7,6 @@ import { useState } from "react"
 import { signOut } from 'firebase/auth'
 import {auth} from "./firebase"
 import Home from "./Home"
-import Homepg from "./Homepg"
 import Login from "./Login"
 import Form from "./Form"
 

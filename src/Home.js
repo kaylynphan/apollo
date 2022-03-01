@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './Home.css';
+import ReviewForm from './ReviewForm';
 import Search from './Search';
 import RatingDropdown from './RatingDropdown.js';
 import Post from './Post';
@@ -23,7 +24,7 @@ const Home = () => {
             <div className="Home">
                 
                 <Search/>
-                
+                <ReviewForm />
             </div>
         
     );
