@@ -38,7 +38,7 @@ function App (){
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login setIsAuth={setIsAuth}/>} />
-            <Route path="/artist" element={<AristPage id="001"/>}/>
+            <Route path="/artist" element={<AristPage artistName="Taylor Swift"/>}/>
         </Routes>
     </ Router>
     );
