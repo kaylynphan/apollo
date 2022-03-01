@@ -1,16 +1,63 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import SearchBar from './SearchBar';
+import Announcer from './announcer';
+import albums from "./albums.json"
+
 import './Home.css';
 import ReviewForm from './ReviewForm';
-import Search from './Search';
 import RatingDropdown from './RatingDropdown.js';
 import Post from './Post';
 import Form from './Form';
 import ArtistProfile from './ArtistProfile';
 import {firestore} from './firebase'
 
+const posts = albums;
 
+const filterPosts = (posts, query) => {
+    if (!query) {
+        return posts;
+    }
+
+    return posts.filter((post) => {
+        const postName = post.name.toLowerCase();
+        return postName.includes(query);
+    });
+};
+
+const Search = () => {
+
+    const { search } = window.location;
+    const query = new URLSearchParams(search).get('s');
+    const [searchQuery, setSearchQuery] = useState(query || '');
+    const filteredPosts = filterPosts(posts, searchQuery);
+
+    return (
+	<div>
+       <Announcer message={`${filteredPosts.length} posts`} />
+       <SearchBar
+		searchQuery={searchQuery}
+                 setSearchQuery={setSearchQuery}
+       />
+       
+       
+       <ul>
+       	{filteredPosts.map((post) => (
+           
+               
+          
+         	<div key={post.id} >
+                 <a href="/artist" class="albumtitle">{post.name}</a>
+             </div>
+             
+        	))}
+       </ul>
+</div>
+    
+    );
+
+}
 
 const Home = () => {
     /*

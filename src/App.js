@@ -5,7 +5,7 @@ import Login from "./Login"
 import { useState } from "react"
 import { signOut } from 'firebase/auth'
 import {auth} from "./firebase"
-import Album from "./Album"
+import AristPage from "./ArtistPage"
 
 function App (){
     /*firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE)
@@ -38,7 +38,7 @@ function App (){
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login setIsAuth={setIsAuth}/>} />
-            <Route path="/album/*" element={<Album />}/>
+            <Route path="/artist" element={<AristPage id="001"/>}/>
         </Routes>
     </ Router>
     );
