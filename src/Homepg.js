@@ -1,7 +1,10 @@
 import React from "react";
+import Home from "./Home"
 
 function Homepg(){
-    return (<div>Homepg</div>);
+    return (
+        <div>homepage</div>
+    );
 }
 
 export default Homepg;
