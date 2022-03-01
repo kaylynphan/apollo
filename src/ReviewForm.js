@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Paper from '@mui/material/Paper';
+import Rating from '@mui/material/Rating';
 import Select from '@mui/material/Select';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 
 function AlbumSelect() {
   const [album, setAlbum] = useState('');
@@ -33,20 +36,40 @@ function AlbumSelect() {
     );
 }
 
+function AlbumRating() {
+    const [value, setValue] = React.useState(0);
+
+    return (
+        <Box>
+            <Typography component="legend">Rating</Typography>
+            <Rating
+            name="simple-controlled"
+            value={value}
+            onChange={(event, newValue) => {
+                setValue(newValue);
+            }}
+            />
+        </Box>
+    );
+}
+
 function ReviewForm() {
     return (
-        <Paper elevation={3} sx={{ width: 400 }}>
+        <Paper elevation={3} sx={{ width: 400, p: 3 }}>
+            <Typography variant="h4">Submit a Review</Typography>
             <Stack spacing={2} sx={{ p : 2}}>
                 <TextField 
-                    required
-                    id="outlined-basic" 
+                    disabled
+                    id="outlined-disabled" 
                     label="Artist" 
+                    defaultValue="Artist"
                     variant="outlined"
                     fontsize
                     sx={{ width: '20ch' }} 
                     size="small"
                 />
                 <AlbumSelect />
+                <AlbumRating />
                 <TextField 
                     required
                     multiline
@@ -55,8 +78,8 @@ function ReviewForm() {
                     label="Your Review"
                     variant="outlined"
                     size="small"
-                    
                 />
+                <Button variant="contained">Submit</Button>
             </Stack>
         </Paper>
     )

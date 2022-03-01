@@ -9,6 +9,7 @@ import Home from "./Home"
 import Login from "./Login"
 import Form from "./Form"
 import ReviewForm from "./ReviewForm";
+import ReviewPost from "./ReviewPost";
 
 function AristPage(props){
     const [isAuth, setIsAuth] = useState(false);
@@ -23,6 +24,7 @@ function AristPage(props){
     <div>
         <ArtistProfile />
         <ReviewForm />
+        <ReviewPost />
     </div>
         
      
