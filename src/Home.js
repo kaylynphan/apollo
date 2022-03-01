@@ -6,7 +6,6 @@ import albums from "./albums.json"
 
 import './Home.css';
 import ReviewForm from './ReviewForm';
-import RatingDropdown from './RatingDropdown.js';
 import Post from './Post';
 import Form from './Form';
 import ArtistProfile from './ArtistProfile';

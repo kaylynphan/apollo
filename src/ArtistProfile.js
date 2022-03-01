@@ -21,7 +21,7 @@ const ArtistProfile = () => {
             
         
     
-    
+
 }
 
 /*class ArtistProfile extends React.Component {
