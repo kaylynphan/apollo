@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import SearchBar from './SearchBar';
 import Announcer from './announcer';
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
+import ArtistProfile from './ArtistProfile';
+import Album from "./Album"
+import albums from "./albums.json"
 
-const posts = [
-    { id: '1', name: 'This first post is about React' },
-    { id: '2', name: 'This next post is about Preact' },
-    { id: '3', name: 'We have yet another React post!' },
-    { id: '4', name: 'This is the fourth and final post' },
-];
+const posts = albums;
 
 const filterPosts = (posts, query) => {
     if (!query) {
@@ -34,10 +33,17 @@ const Search = () => {
 		searchQuery={searchQuery}
                  setSearchQuery={setSearchQuery}
        />
-
+       
+       
        <ul>
        	{filteredPosts.map((post) => (
-         	<li key={post.id}>{post.name}</li>
+           
+               
+          
+         	<div key={post.id} >
+                 <a href="/album" class="albumtitle">{post.name}</a>
+             </div>
+             
         	))}
        </ul>
 </div>
@@ -45,5 +51,4 @@ const Search = () => {
     );
 
 }
-
 export default Search;

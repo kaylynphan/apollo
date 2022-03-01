@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import './App.css';
+import './Home.css';
 import Search from './Search';
 import RatingDropdown from './RatingDropdown.js';
 import Post from './Post';
@@ -23,9 +23,7 @@ const Home = () => {
             <div className="Home">
                 
                 <Search/>
-                <div>
-                      <RatingDropdown />
-                </div>
+                
             </div>
         
     );
