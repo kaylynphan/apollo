@@ -10,6 +10,7 @@ import Select from '@mui/material/Select';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import {useLocation} from 'react-router-dom'
 
 function AlbumSelect() {
   const [album, setAlbum] = useState('');
@@ -54,6 +55,8 @@ function AlbumRating() {
 }
 
 function ReviewForm(props) {
+    const location = useLocation();
+    const artist = location.state.artist;
     return (
         <Paper elevation={3} sx={{ width: 400, p: 3 }}>
             <Typography variant="h4">Submit a Review</Typography>
@@ -61,8 +64,8 @@ function ReviewForm(props) {
                 <TextField 
                     disabled
                     id="outlined-disabled" 
-                    label={props.artistName}
-                    defaultValue={props.artistName}
+                    label="Artist"
+                    defaultValue={artist}
                     variant="outlined"
                     fontsize
                     sx={{ width: '20ch' }} 

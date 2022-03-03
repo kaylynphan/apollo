@@ -63,7 +63,7 @@ const filterPosts = (posts, query) => {
     }
 
     return posts.filter((post) => {
-        const postName = post.name.toLowerCase();
+        const postName = post.artist.toLowerCase();
         return postName.includes(query);
     });
 };
