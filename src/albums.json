@@ -1,21 +1,56 @@
 [
-   
+
         { "id": "1", 
-        "name": "Red",
-        "artist": "Taylor Swift",
-        "year": "2012"
+            "artist": "Taylor Swift",
+            "albums": {
+                "Red":{
+                    "year": "2012",
+                    "imgURL": "./albumCovers/TaylorSwift/Red.png"
+                },
+            "1989":{
+                "year": "2014",
+                "imgURL": "./albumCovers/TaylorSwift/1989.png"
+            }
+        }
         },
        { "id": "2", 
-            "name": "30",
-            "artist": "Adele",
-            "year": "2021"
+        "artist": "Adele",
+        "albums": {
+            "30":{
+                "year": "2021",
+                "imgURL": "./albumCovers/Adele/30.png"
+            },
+            "21":{
+                "year": "2011",
+                "imgURL": "./albumCovers/Adele/21.png"
+            }
+        }
         },
       { "id": "3", 
-        "name": "Teenage Dream",
-        "artist": "Katy Perry", "year": "2010"
+        "artist": "Katy Perry",
+        "albums": {
+            "Teenage Dreams":{
+                "year": "2010",
+                "imgURL": "./albumCovers/KatyPerry/TeenageDreams.jpg"
+            },
+            "Smile":{
+                "year": "2020",
+                "imgURL": "./albumCovers/KatyPerry/Smile.png"
+            }
+        }
         },
-       { "id": "4", "name": "Loose Change",
-            "artist": "Ed Sheeran", "year":"2010"
+       { "id": "4", 
+        "artist": "Ed Sheeran",
+        "albums": {
+            "Loose Change":{
+                "year": "2010",
+                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg"
+            },
+            "=":{
+                "year": "2021",
+                "imgURL": "./albumCovers/EdSheeran/=.png"
+            }
+        }
         }
    
 
