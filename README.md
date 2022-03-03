@@ -1,39 +1,61 @@
 <h1>apollo</h1>
+Apollo is a client-side React app that lets users view music album reviews and post their own.
 
-<h3>clone remote main</h3>
-git clone https://github.com/kaylynphan/apollo.git
+<hb></hb>
 
-<h3>make new branch</h3>
-	git checkout -b BRANCH-NAME
-<h3>switch branches, if necessary</h3>
-	git switch BRANCH-NAME
+To run the app:
 
-<h3>make edits</h3>
+```[bash]
+# clone this repository
+$ git clone https://github.com/kaylynphan/apollo.git
+# cd into the repository's root directory and install required packages
+$ npm install react-router-dom
+$ npm install react-icons
+$ npm install @mui/material @emotion/react @emotion/styled
+$ npm start
+```
 
-<h3>preview edits</h3>
-	cat FILE
-
-<h3>view version status and git tracking</h3>
-	<ul> 
-    	<li>git ls-files # view files tracked by git</li>
-		<li>git status # see current working branch and tracked changes</li>
-		<li>git log # see commit history</li>
-	</ul>
-
-<h3>stage files for commit</h3>
-	git add <filename>
-	git commit -m DESCRIPTION
-
-<h3>made a mistake?</h3>
-	git reset FILENAME
-
-<h3>stage pull request</h3>
-	git push origin BRANCH-NAME
-
-<h3>open pull request on GitHub</h3>
-
-In order to run the search, you need to have "react-router-dom" and "react-icons" installed.
-You can use npm "..." to install
-
-npm install @mui/material @emotion/react @emotion/styled
-
+clone remote main
+```[bash]
+$ git clone https://github.com/kaylynphan/apollo.git
+```
+make new branch
+```[bash]
+$ git checkout -b BRANCH-NAME
+```
+switch branches, if necessary
+```[bash]
+$ git switch BRANCH-NAME
+# As a rule of thumb, always work in a separate branch and never push directly into main.
+```
+preview edits
+```[bash]
+$ cat FILE
+```
+view version status and git tracking
+```[bash]
+$ git ls-files 		# view files tracked by git
+$ git status 		# see current working branch and tracked changes
+$ git log 		# see commit history
+```
+stage files for commit
+```[bash]
+$ git add FILE-NAME
+$ git commit -m DESCRIPTION
+```
+pull new changes from main
+```[bash]
+$ git pull origin main
+# sometimes auto-merging is possible. Sometimes, you will have to do manual conflict resolution.
+# make sure you always make a commit before attempting to pull/merge. That way, your changes won't be lost.
+```
+made a mistake?
+```[bash]
+$ git reset FILENAME	# this will reset the file to its state from the last commit
+# if you accidentally staged a file for a commit and want to remove it, use git reset
+```
+stage pull request
+```[bash]
+$ git push origin BRANCH-NAME
+```
+<h3>Your changes will appear on a duplicate of your working branch on Github. To merge onto main, open a pull request.</h3>
