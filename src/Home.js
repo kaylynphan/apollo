@@ -90,7 +90,7 @@ const Search = () => {
                
           
          	<div key={post.id} >
-                 <Link to="/artist" class="albumtitle" state={{artist: post.artist}}>{post.artist}</Link>
+                 <Link to="/artist" class="albumtitle" state={{artist: post.artist, album: post.albums}}>{post.artist}</Link>
              </div>
              
         	))}
