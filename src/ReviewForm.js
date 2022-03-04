@@ -11,9 +11,10 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import {useLocation} from 'react-router-dom'
-
-function AlbumSelect() {
-  const [album, setAlbum] = useState('');
+import {addDoc, collection} from 'firebase/firestore'
+import {db, auth} from './firebase';
+/*function AlbumSelect() {
+  const [album, setAlbum] = useState('default');
   const location = useLocation();
   const artist = location.state.artist;
   const albums = location.state.album;
@@ -26,14 +27,16 @@ function AlbumSelect() {
     EachArtistAlbum.push(<MenuItem value={element}>{albumlist[element]}</MenuItem>)
 }
     return (
+        
         <FormControl fullWidth>
-            <InputLabel id="demo-simple-select-label">Album</InputLabel>
+            {album}
+            <InputLabel id="demo-simple-select-label">Albums</InputLabel>
             <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 value={album}
                 label="Album"
-                onChange={handleChange}
+                onChange={(event) => {setAlbum(event.target.value)}}
             >
                 <div>{EachArtistAlbum}</div>
             </Select>
@@ -46,21 +49,48 @@ function AlbumRating() {
 
     return (
         <Box>
+            {value}
             <Typography component="legend">Rating</Typography>
             <Rating
             name="simple-controlled"
             value={value}
-            onChange={(event, newValue) => {
-                setValue(newValue);
-            }}
+            onChange={(event) => {setValue(event.target.value)}}
             />
         </Box>
     );
-}
+}*/
 
 function ReviewForm(props) {
+    
+    const [value, setValue] = React.useState("");
     const location = useLocation();
     const artist = location.state.artist;
+    const [review, setReview] = React.useState("")
+    const [album, setAlbum] = React.useState("");
+    const reviewCollection = collection(db, "Reviews")
+    const albums = location.state.album;
+    const albumlist = Object.keys(albums)
+    const handleChange = event => {
+        setAlbum(event.target.album);
+        console.log("inside handle change")
+        console.log(album)
+      };
+    const leaveReview = async () =>  {
+        await addDoc(reviewCollection, {
+            artist: artist, 
+            dislikes: 0, 
+            likes: 0, 
+            rating: value,
+            album: album, 
+            review: review, 
+            user:auth.currentUser.displayName})
+    }
+    const EachArtistAlbum = [];
+  for(let element in albumlist){
+    EachArtistAlbum.push(<MenuItem value={albumlist[element]}>{albumlist[element]}</MenuItem>)
+    //EachArtistAlbum.push(albumlist[element])
+}
+
     return (
         <Paper elevation={3} sx={{ width: 400, p: 3 }}>
             <Typography variant="h4">Submit a Review</Typography>
@@ -75,8 +105,37 @@ function ReviewForm(props) {
                     sx={{ width: '20ch' }} 
                     size="small"
                 />
-                <AlbumSelect />
-                <AlbumRating />
+            {/*////////////////////////////////////
+            ////albumselect 
+            /////////////////////////////////////*/}
+            
+            <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label">Albums</InputLabel>
+            <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={album}
+                label="Album"
+                onChange={(event) => {setAlbum(event.target.value)}}
+                options={EachArtistAlbum}
+            >
+                {EachArtistAlbum}
+            </Select>
+            </FormControl>
+            {/*////////////////////////////////////
+            ////albumRating
+            /////////////////////////////////////*/}
+                <Box>
+                <Typography component="legend">Rating</Typography>
+                <Rating
+                name="simple-controlled"
+                value={value}
+                onChange={(event) => {setValue(event.target.value)}}
+                />
+                </Box>
+            {/*////////////////////////////////////
+            ////ReviewForm 
+            /////////////////////////////////////*/}
                 <TextField 
                     required
                     multiline
@@ -84,9 +143,9 @@ function ReviewForm(props) {
                     maxRows={4}
                     label="Your Review"
                     variant="outlined"
-                    size="small"
+                    size="small" value={review} onChange={(event) => {setReview(event.target.value)}}
                 />
-                <Button variant="contained">Submit</Button>
+                <Button variant="contained" onClick={leaveReview}>Submit</Button>
             </Stack>
         </Paper>
     )
