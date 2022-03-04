@@ -1,4 +1,5 @@
 <h1>apollo</h1>
+
 Apollo is a client-side React app that lets users view music album reviews and post their own.
 
 <hb></hb>
@@ -12,6 +13,7 @@ $ git clone https://github.com/kaylynphan/apollo.git
 $ npm install react-router-dom
 $ npm install react-icons
 $ npm install @mui/material @emotion/react @emotion/styled
+$ npm install -g browserify
 $ npm start
 ```
 

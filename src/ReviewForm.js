@@ -14,10 +14,17 @@ import {useLocation} from 'react-router-dom'
 
 function AlbumSelect() {
   const [album, setAlbum] = useState('');
-
+  const location = useLocation();
+  const artist = location.state.artist;
+  const albums = location.state.album;
+  const albumlist = Object.keys(albums)
   const handleChange = (event) => {
     setAlbum(event.target.value);
   };
+  const EachArtistAlbum = [];
+  for(let element in albumlist){
+    EachArtistAlbum.push(<MenuItem value={element}>{albumlist[element]}</MenuItem>)
+}
     return (
         <FormControl fullWidth>
             <InputLabel id="demo-simple-select-label">Album</InputLabel>
@@ -28,10 +35,7 @@ function AlbumSelect() {
                 label="Album"
                 onChange={handleChange}
             >
-                <MenuItem value={0}>Red</MenuItem>
-                <MenuItem value={1}>Speak Now</MenuItem>
-                <MenuItem value={2}>Red (Taylor's Version)</MenuItem>
-                <MenuItem value={3}>Lover</MenuItem>
+                <div>{EachArtistAlbum}</div>
             </Select>
         </FormControl>
     );
