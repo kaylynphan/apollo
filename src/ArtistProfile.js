@@ -15,6 +15,15 @@ const ArtistProfile = () => {
     const bio = "This artist is a person. Born on this day. Became famous blah blah blah"
     const url = "https://www.weact.org/wp-content/uploads/2016/10/Blank-profile.png";
     let str = ""
+    const AlbumGrid = [];
+  for(let element in albumlist){
+    AlbumGrid.push(<Grid item xs={6}>
+        <div className = "album">
+            <h4>{albumlist[element]}</h4>
+            <img src={url} alt={albumlist[element]}/>
+        </div>
+    </Grid>)
+}
     for(let element in albumlist){
         str += albumlist[element];
         if (element < albumlist.length - 1){
@@ -29,31 +38,8 @@ const ArtistProfile = () => {
                 <h4 className="bio">Bio: {bio}</h4>
                 <h3>Here is a list of all {artist}'s albums</h3>
                 <Box sx={{ flexGrow: 1 }}>
-                    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                        <Grid item xs={6}>
-                            <div className = "album">
-                                <h4>first album</h4>
-                                <img src={url} alt={artist}/>
-                            </div>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <div className = "album">
-                                <h4>second album</h4>
-                                <img src={url} alt={artist}/>
-                            </div>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <div className = "album">
-                                <h4>add more</h4>
-                                <img src={url} alt={artist}/>
-                            </div>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <div className = "album">
-                                <h4>latest album</h4>
-                                <img src={url} alt={artist}/>
-                            </div>
-                        </Grid>
+                    <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                        <div>{AlbumGrid}</div>
                     </Grid>
                 </Box>
             </div>
