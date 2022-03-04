@@ -21,7 +21,7 @@ function App (){
     var errorCode = error.code;
     var errorMessage = error.message;
   });*/
-    const [isAuth, setIsAuth] = useState(false);
+    const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
     const signUserOut = () => {
         signOut(auth).then(() => {
             localStorage.clear()
