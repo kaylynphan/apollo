@@ -37,3 +37,5 @@ You can use npm "..." to install
 
 npm install @mui/material @emotion/react @emotion/styled
 
+npm install -g browserify
+

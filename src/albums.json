@@ -2,6 +2,7 @@
 
         { "id": "1", 
             "artist": "Taylor Swift",
+            "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
             "albums": {
                 "Red":{
                     "year": "2012",
@@ -15,6 +16,7 @@
         },
        { "id": "2", 
         "artist": "Adele",
+        "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
         "albums": {
             "30":{
                 "year": "2021",
@@ -28,6 +30,7 @@
         },
       { "id": "3", 
         "artist": "Katy Perry",
+        "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
         "albums": {
             "Teenage Dreams":{
                 "year": "2010",
@@ -41,6 +44,7 @@
         },
        { "id": "4", 
         "artist": "Ed Sheeran",
+        "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
         "albums": {
             "Loose Change":{
                 "year": "2010",
