@@ -9,7 +9,7 @@ import Home from "./Home"
 import Login from "./Login"
 import Form from "./Form"
 import ReviewForm from "./ReviewForm";
-import ReviewPost from "./ReviewPost";
+import ListOfReviewPosts from "./ListOfReviewPosts";
 import albums from "./albums.json";
 import reviews from "./reviews.json";
 
@@ -26,7 +26,7 @@ function ArtistPage(props){
         <div>
             <ArtistProfile artistName={props.artistName}/>
             <ReviewForm artistName={props.artistName}/>
-            <ReviewPost artistName={props.artistName}/>
+            <ListOfReviewPosts artistName={props.artistName}/>
         </div>
     );
 }
