@@ -7,7 +7,7 @@ import {useLocation} from "react-router-dom"
 import { db } from "./firebase.js";
 import { useEffect, useState } from 'react';
 
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 function ReviewPost(props) {
     return (
@@ -27,7 +27,8 @@ function ListOfReviewPosts() {
     const artist = location.state.artist;
 
     const [postList, setPostList] = useState([]);
-    const postsCollectionRef = collection(db, "Reviews");
+    //const postsCollectionRef = collection(db, "Reviews");
+    const postsCollectionRef = query(collection(db, "Reviews"), where("artist", "==", artist));
 
     useEffect(() => {
         const getPosts = async () => {
