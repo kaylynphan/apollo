@@ -10,17 +10,22 @@ import {useLocation} from "react-router-dom"
 import { db } from "./firebase.js";
 import { useEffect, useState } from 'react';
 
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs, query, where, doc, updateDoc } from "firebase/firestore";
 
 function ReviewPost(props) {
-    const [likes, setLikes] = useState(0);
-    const [dislikes, setDislikes] = useState(0)
-
-    const handleLikeClick = () => {
-        setLikes(likes + 1);
+    const handleLikeClick = async () => {
+        const newLikes = props.likes + 1;
+        const thisReviewRef = doc(db, "Reviews", props.id);
+        await updateDoc(thisReviewRef, {
+            likes: newLikes
+        });
     }
-    const handleDislikeClick = () => {
-        setDislikes(dislikes + 1);
+    const handleDislikeClick = async () => {
+        const newDislikes = props.dislikes + 1;
+        const thisReviewRef = doc(db, "Reviews", props.id);
+        await updateDoc(thisReviewRef, {
+            dislikes: newDislikes
+        });
     }
 
     return (
@@ -32,10 +37,10 @@ function ReviewPost(props) {
                 <Typography variant="body2">{props.review}</Typography>
                 <Grid container>
                     <Button onClick={handleLikeClick} variant="outlined" size="small" startIcon={<ThumbUpAltRoundedIcon />}>
-                        Likes: {likes}
+                        Likes: {props.likes}
                     </Button>
                     <Button onClick={handleDislikeClick} variant="outlined" size="small" startIcon={<ThumbDownAltRoundedIcon />}>
-                        Dislikes: {dislikes}
+                        Dislikes: {props.dislikes}
                     </Button>
                 </Grid>
             </Stack>
@@ -71,6 +76,9 @@ function ListOfReviewPosts() {
                         rating = {value.rating}
                         review = {value.review} 
                         user = {value.user}
+                        likes = {value.likes}
+                        dislikes = {value.dislikes}
+                        id = {value.id}
                     />
                 ))}
 
