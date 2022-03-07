@@ -8,10 +8,10 @@ import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 import Typography from '@mui/material/Typography';
 import {useLocation} from "react-router-dom"
 import { db } from "./firebase.js";
-import { useEffect, useState } from 'react';
 
 import { collection, getDocs, query, where, doc, updateDoc, onSnapshot } from "firebase/firestore";
 import { FirebaseError } from 'firebase/app';
+import { positions } from '@mui/system';
 
 function ReviewPost(props) {
     const handleLikeClick = async () => {
@@ -54,16 +54,13 @@ function ListOfReviewPosts() {
     const artist = location.state.artist;
 
     const posts = [];
-    //const postsCollectionRef = collection(db, "Reviews");
     const q = query(collection(db, "Reviews"), where("artist", "==", artist));
-    const update = onSnapshot(q, (querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-            posts.push(doc.data())
-        });
-        console.log(posts);
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+          posts.push(doc.data());
+      });
+      console.log("Current posts: ", posts);
     });
-    //update();
-
 
     return (
         <Paper elevation={3} sx={{ width: 400, p: 3 }}>
@@ -72,16 +69,15 @@ function ListOfReviewPosts() {
             <Stack>
                 {posts.map((value) => (
                     <ReviewPost 
-                        album = {value.album}
-                        rating = {value.rating}
-                        review = {value.review} 
-                        user = {value.user}
-                        likes = {value.likes}
-                        dislikes = {value.dislikes}
-                        id = {value.id}
+                        album={value.album}
+                        rating={value.rating}
+                        review={value.review} 
+                        user={value.user}
+                        likes={value.likes}
+                        dislikes={value.dislikes}
+                        id={value.id}
                     />
                 ))}
-
             </Stack>
         </Paper>
     )
