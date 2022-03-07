@@ -10,7 +10,8 @@ import {useLocation} from "react-router-dom"
 import { db } from "./firebase.js";
 import { useEffect, useState } from 'react';
 
-import { collection, getDocs, query, where, doc, updateDoc } from "firebase/firestore";
+import { collection, getDocs, query, where, doc, updateDoc, onSnapshot } from "firebase/firestore";
+import { FirebaseError } from 'firebase/app';
 
 function ReviewPost(props) {
     const handleLikeClick = async () => {
@@ -36,10 +37,10 @@ function ReviewPost(props) {
                 <Rating name="read-only" value={props.rating} readOnly />
                 <Typography variant="body2">{props.review}</Typography>
                 <Grid container>
-                    <Button onClick={handleLikeClick} variant="outlined" size="small" startIcon={<ThumbUpAltRoundedIcon />}>
+                    <Button variant="outlined" size="small" startIcon={<ThumbUpAltRoundedIcon />}>
                         Likes: {props.likes}
                     </Button>
-                    <Button onClick={handleDislikeClick} variant="outlined" size="small" startIcon={<ThumbDownAltRoundedIcon />}>
+                    <Button variant="outlined" size="small" startIcon={<ThumbDownAltRoundedIcon />}>
                         Dislikes: {props.dislikes}
                     </Button>
                 </Grid>
@@ -52,25 +53,24 @@ function ListOfReviewPosts() {
     const location = useLocation();
     const artist = location.state.artist;
 
-    const [postList, setPostList] = useState([]);
+    const posts = [];
     //const postsCollectionRef = collection(db, "Reviews");
-    const postsCollectionRef = query(collection(db, "Reviews"), where("artist", "==", artist));
+    const q = query(collection(db, "Reviews"), where("artist", "==", artist));
+    const update = onSnapshot(q, (querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            posts.push(doc.data())
+        });
+        console.log(posts);
+    });
+    //update();
 
-    useEffect(() => {
-        const getPosts = async () => {
-            const data = await getDocs(postsCollectionRef);
-            setPostList(data.docs.map((doc) => ({...doc.data(), id: doc.id })));
-            //console.log(data.docs.map((doc) => ({...doc.data(), id: doc.id })));
-        };
-        getPosts();
-    })
 
     return (
         <Paper elevation={3} sx={{ width: 400, p: 3 }}>
             <Typography variant="h5">Read Reviews for {artist}</Typography>
             {/*Here we would map to the reviews in the database */}
             <Stack>
-                {postList.map((value) => (
+                {posts.map((value) => (
                     <ReviewPost 
                         album = {value.album}
                         rating = {value.rating}
