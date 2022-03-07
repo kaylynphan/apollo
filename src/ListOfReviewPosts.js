@@ -37,10 +37,10 @@ function ReviewPost(props) {
                 <Rating name="read-only" value={props.rating} readOnly />
                 <Typography variant="body2">{props.review}</Typography>
                 <Grid container>
-                    <Button onClick={handleLikeClick} variant="outlined" size="small" startIcon={<ThumbUpAltRoundedIcon />}>
+                    <Button variant="outlined" size="small" startIcon={<ThumbUpAltRoundedIcon />}>
                         Likes: {props.likes}
                     </Button>
-                    <Button onClick={handleDislikeClick} variant="outlined" size="small" startIcon={<ThumbDownAltRoundedIcon />}>
+                    <Button variant="outlined" size="small" startIcon={<ThumbDownAltRoundedIcon />}>
                         Dislikes: {props.dislikes}
                     </Button>
                 </Grid>
@@ -62,6 +62,7 @@ function ListOfReviewPosts() {
         });
         console.log(posts);
     });
+    //update();
 
 
     return (
