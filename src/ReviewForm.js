@@ -83,7 +83,7 @@ function ReviewForm(props) {
             rating: value,
             album: album, 
             review: review, 
-            user: "USERNAME",
+            user: auth.currentUser.displayName,
         });
         props.handleSubmissions();
     }
