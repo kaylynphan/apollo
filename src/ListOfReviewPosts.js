@@ -66,6 +66,26 @@ function ListOfReviewPosts() {
       setPosts(thesePosts);
     });
 
+    /*
+    // this causes an infinite loop
+    useEffect(() => {
+        const getPosts = async () => {
+            const data = await getDocs(postsCollectionRef);
+            setPostList(data.docs.map((doc) => ({...doc.data(), id: doc.id })));
+            //console.log(data.docs.map((doc) => ({...doc.data(), id: doc.id })));
+        };
+        getPosts();
+    })
+    */
+
+    /*const q = query(collection(db, "Reviews"), where("artist", "==", artist));
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+      const thesePosts = [];
+      querySnapshot.forEach((doc) => {
+          thesePosts.push(doc.data());
+      });
+      setPosts(thesePosts);
+    });*/
 
     return (
         <Paper elevation={3} sx={{ width: 400, p: 3 }}>
