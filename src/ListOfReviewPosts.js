@@ -21,6 +21,7 @@ function ReviewPost(props) {
         await updateDoc(thisReviewRef, {
             likes: newLikes
         });
+        props.handleSubmissions();
     }
     const handleDislikeClick = async () => {
         const newDislikes = props.dislikes + 1;
@@ -28,6 +29,7 @@ function ReviewPost(props) {
         await updateDoc(thisReviewRef, {
             dislikes: newDislikes
         });
+        props.handleSubmissions();
     }
 
     return (
@@ -106,6 +108,7 @@ function ListOfReviewPosts(props) {
                         likes = {value.likes}
                         dislikes = {value.dislikes}
                         id = {value.id}
+                        handleSubmissions = {props.handleSubmissions}
                     />
                 ))}
 

@@ -32,7 +32,7 @@ function ArtistPage(props){
         <div>
             <ArtistProfile artistName={props.artistName}/>
             <ReviewForm artistName={props.artistName} handleSubmissions={handleSubmissions}/>
-            <ListOfReviewPosts artistName={props.artistName} submissions={submissions}/>
+            <ListOfReviewPosts artistName={props.artistName} submissions={submissions} handleSubmissions={handleSubmissions}/>
         </div>
     );
 }
