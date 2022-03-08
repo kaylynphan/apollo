@@ -10,7 +10,9 @@ import {useLocation} from "react-router-dom"
 import { db } from "./firebase.js";
 import { useEffect, useState } from 'react';
 
-import { collection, getDocs, query, where, doc, updateDoc } from "firebase/firestore";
+import { collection, getDocs, query, where, doc, updateDoc, onSnapshot } from "firebase/firestore";
+import { getAccordionDetailsUtilityClass } from '@mui/material';
+
 
 function ReviewPost(props) {
     const handleLikeClick = async () => {
@@ -48,7 +50,7 @@ function ReviewPost(props) {
     )
 }
 
-function ListOfReviewPosts() {
+function ListOfReviewPosts(props) {
     const location = useLocation();
     const artist = location.state.artist;
 
@@ -68,14 +70,27 @@ function ListOfReviewPosts() {
     })
     */
 
+    /*
     const q = query(collection(db, "Reviews"), where("artist", "==", artist));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       const thesePosts = [];
       querySnapshot.forEach((doc) => {
           thesePosts.push(doc.data());
       });
-      setPosts(thesePosts);
+      setPostList(thesePosts);
     });
+    */
+    
+
+    // to be done on every submission
+    useEffect(() => {
+        const getPosts = async () => {
+            const data = await getDocs(postsCollectionRef);
+            setPostList(data.docs.map((doc) => ({...doc.data(), id: doc.id })));
+            //console.log(data.docs.map((doc) => ({...doc.data(), id: doc.id })));
+        };
+        getPosts();
+    }, [props.submissions]);
 
     return (
         <Paper elevation={3} sx={{ width: 400, p: 3 }}>

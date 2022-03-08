@@ -22,11 +22,17 @@ function ArtistPage(props){
             window.location.pathname = "/login"
         })
     }
+
+    const [submissions, updateSubmissions] = useState(0);
+    const handleSubmissions = () => {
+        updateSubmissions(submissions + 1);
+        console.log("Submissions is updating");
+    }
     return (
         <div>
             <ArtistProfile artistName={props.artistName}/>
-            <ReviewForm artistName={props.artistName}/>
-            <ListOfReviewPosts artistName={props.artistName}/>
+            <ReviewForm artistName={props.artistName} handleSubmissions={handleSubmissions}/>
+            <ListOfReviewPosts artistName={props.artistName} submissions={submissions}/>
         </div>
     );
 }
