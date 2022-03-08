@@ -83,7 +83,9 @@ function ReviewForm(props) {
             rating: value,
             album: album, 
             review: review, 
-            user:auth.currentUser.displayName})
+            user: auth.currentUser.displayName,
+        });
+        props.handleSubmissions();
     }
     const EachArtistAlbum = [];
   for(let element in albumlist){

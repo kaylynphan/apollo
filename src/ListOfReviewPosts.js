@@ -12,8 +12,11 @@ import { db } from "./firebase.js";
 import { useEffect, useState } from 'react';
 
 import { collection, getDocs, query, where, doc, updateDoc, onSnapshot } from "firebase/firestore";
+
+
 import { FirebaseError } from 'firebase/app';
 import { positions } from '@mui/system';
+
 
 function ReviewPost(props) {
     const handleLikeClick = async () => {
@@ -22,6 +25,7 @@ function ReviewPost(props) {
         await updateDoc(thisReviewRef, {
             likes: newLikes
         });
+        props.handleSubmissions();
     }
     const handleDislikeClick = async () => {
         const newDislikes = props.dislikes + 1;
@@ -29,6 +33,7 @@ function ReviewPost(props) {
         await updateDoc(thisReviewRef, {
             dislikes: newDislikes
         });
+        props.handleSubmissions();
     }
 
     return (
@@ -51,7 +56,7 @@ function ReviewPost(props) {
     )
 }
 
-function ListOfReviewPosts() {
+function ListOfReviewPosts(props) {
     const location = useLocation();
     const artist = location.state.artist;
     const [posts, setPosts] = useState([]);
@@ -78,14 +83,28 @@ function ListOfReviewPosts() {
     })
     */
 
-    /*const q = query(collection(db, "Reviews"), where("artist", "==", artist));
+
+    /*
+    const q = query(collection(db, "Reviews"), where("artist", "==", artist));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       const thesePosts = [];
       querySnapshot.forEach((doc) => {
           thesePosts.push(doc.data());
       });
-      setPosts(thesePosts);
-    });*/
+      setPostList(thesePosts);
+    });
+    */
+    
+
+    // to be done on every submission
+    useEffect(() => {
+        const getPosts = async () => {
+            const data = await getDocs(postsCollectionRef);
+            setPostList(data.docs.map((doc) => ({...doc.data(), id: doc.id })));
+            //console.log(data.docs.map((doc) => ({...doc.data(), id: doc.id })));
+        };
+        getPosts();
+    }, [props.submissions]);
 
     return (
         <Paper elevation={3} sx={{ width: 400, p: 3 }}>
@@ -95,13 +114,14 @@ function ListOfReviewPosts() {
                 {console.log(posts)}
                 {posts.map((value, id) => (
                     <ReviewPost 
-                        album={value.album}
-                        rating={value.rating}
-                        review={value.review} 
-                        user={value.user}
-                        likes={value.likes}
-                        dislikes={value.dislikes}
-                        id={id}
+                        album = {value.album}
+                        rating = {value.rating}
+                        review = {value.review} 
+                        user = {value.user}
+                        likes = {value.likes}
+                        dislikes = {value.dislikes}
+                        id = {value.id}
+                        handleSubmissions = {props.handleSubmissions}
                     />
                 ))}
             </Stack>
