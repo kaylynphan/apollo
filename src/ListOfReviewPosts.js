@@ -9,6 +9,8 @@ import Typography from '@mui/material/Typography';
 import {useLocation} from "react-router-dom"
 import { db } from "./firebase.js";
 
+import { useEffect, useState } from 'react';
+
 import { collection, getDocs, query, where, doc, updateDoc, onSnapshot } from "firebase/firestore";
 import { FirebaseError } from 'firebase/app';
 import { positions } from '@mui/system';
@@ -52,22 +54,26 @@ function ReviewPost(props) {
 function ListOfReviewPosts() {
     const location = useLocation();
     const artist = location.state.artist;
+    const [posts, setPosts] = useState([]);
 
-    const posts = [];
+    
     const q = query(collection(db, "Reviews"), where("artist", "==", artist));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
+      const thesePosts = [];
       querySnapshot.forEach((doc) => {
-          posts.push(doc.data());
+          thesePosts.push(doc.data());
       });
-      console.log("Current posts: ", posts);
+      setPosts(thesePosts);
     });
+
 
     return (
         <Paper elevation={3} sx={{ width: 400, p: 3 }}>
             <Typography variant="h5">Read Reviews for {artist}</Typography>
             {/*Here we would map to the reviews in the database */}
             <Stack>
-                {posts.map((value) => (
+                {console.log(posts)}
+                {posts.map((value, id) => (
                     <ReviewPost 
                         album={value.album}
                         rating={value.rating}
@@ -75,7 +81,7 @@ function ListOfReviewPosts() {
                         user={value.user}
                         likes={value.likes}
                         dislikes={value.dislikes}
-                        id={value.id}
+                        id={id}
                     />
                 ))}
             </Stack>
