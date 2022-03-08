@@ -56,6 +56,8 @@ function ListOfReviewPosts() {
     //const postsCollectionRef = collection(db, "Reviews");
     const postsCollectionRef = query(collection(db, "Reviews"), where("artist", "==", artist));
 
+    /*
+    // this causes an infinite loop
     useEffect(() => {
         const getPosts = async () => {
             const data = await getDocs(postsCollectionRef);
@@ -64,6 +66,16 @@ function ListOfReviewPosts() {
         };
         getPosts();
     })
+    */
+
+    const q = query(collection(db, "Reviews"), where("artist", "==", artist));
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+      const thesePosts = [];
+      querySnapshot.forEach((doc) => {
+          thesePosts.push(doc.data());
+      });
+      setPosts(thesePosts);
+    });
 
     return (
         <Paper elevation={3} sx={{ width: 400, p: 3 }}>
