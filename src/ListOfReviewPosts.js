@@ -8,10 +8,14 @@ import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 import Typography from '@mui/material/Typography';
 import {useLocation} from "react-router-dom"
 import { db } from "./firebase.js";
+
 import { useEffect, useState } from 'react';
 
 import { collection, getDocs, query, where, doc, updateDoc, onSnapshot } from "firebase/firestore";
-import { getAccordionDetailsUtilityClass } from '@mui/material';
+
+
+import { FirebaseError } from 'firebase/app';
+import { positions } from '@mui/system';
 
 
 function ReviewPost(props) {
@@ -40,10 +44,10 @@ function ReviewPost(props) {
                 <Rating name="read-only" value={props.rating} readOnly />
                 <Typography variant="body2">{props.review}</Typography>
                 <Grid container>
-                    <Button onClick={handleLikeClick} variant="outlined" size="small" startIcon={<ThumbUpAltRoundedIcon />}>
+                    <Button variant="outlined" size="small" startIcon={<ThumbUpAltRoundedIcon />}>
                         Likes: {props.likes}
                     </Button>
-                    <Button onClick={handleDislikeClick} variant="outlined" size="small" startIcon={<ThumbDownAltRoundedIcon />}>
+                    <Button variant="outlined" size="small" startIcon={<ThumbDownAltRoundedIcon />}>
                         Dislikes: {props.dislikes}
                     </Button>
                 </Grid>
@@ -55,10 +59,17 @@ function ReviewPost(props) {
 function ListOfReviewPosts(props) {
     const location = useLocation();
     const artist = location.state.artist;
+    const [posts, setPosts] = useState([]);
 
-    const [postList, setPostList] = useState([]);
-    //const postsCollectionRef = collection(db, "Reviews");
-    const postsCollectionRef = query(collection(db, "Reviews"), where("artist", "==", artist));
+    
+    const q = query(collection(db, "Reviews"), where("artist", "==", artist));
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+      const thesePosts = [];
+      querySnapshot.forEach((doc) => {
+          thesePosts.push(doc.data());
+      });
+      setPosts(thesePosts);
+    });
 
     /*
     // this causes an infinite loop
@@ -71,6 +82,7 @@ function ListOfReviewPosts(props) {
         getPosts();
     })
     */
+
 
     /*
     const q = query(collection(db, "Reviews"), where("artist", "==", artist));
@@ -99,7 +111,8 @@ function ListOfReviewPosts(props) {
             <Typography variant="h5">Read Reviews for {artist}</Typography>
             {/*Here we would map to the reviews in the database */}
             <Stack>
-                {postList.map((value) => (
+                {console.log(posts)}
+                {posts.map((value, id) => (
                     <ReviewPost 
                         album = {value.album}
                         rating = {value.rating}
@@ -111,7 +124,6 @@ function ListOfReviewPosts(props) {
                         handleSubmissions = {props.handleSubmissions}
                     />
                 ))}
-
             </Stack>
         </Paper>
     )
