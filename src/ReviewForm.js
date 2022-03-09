@@ -15,7 +15,7 @@ import {addDoc, collection} from 'firebase/firestore'
 import {db, auth} from './firebase';
 
 function ReviewForm(props) {
-    
+    const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
     const [value, setValue] = React.useState("");
     const location = useLocation();
     const artist = location.state.artist;
@@ -101,7 +101,11 @@ function ReviewForm(props) {
                     variant="outlined"
                     size="small" value={review} onChange={(event) => {setReview(event.target.value)}}
                 />
+                { isAuth ? 
                 <Button variant="contained" onClick={leaveReview}>Submit</Button>
+                :<Button variant="contained">Log In to leave a review!</Button>
+                }
+                
             </Stack>
         </Paper>
     )
