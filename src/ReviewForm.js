@@ -99,7 +99,8 @@ function ReviewForm(props) {
                     maxRows={4}
                     label="Your Review"
                     variant="outlined"
-                    size="small" value={review} onChange={(event) => {setReview(event.target.value)}}
+                    size="small" value={review} 
+                    onChange={(event) => {setReview(event.target.value)}}
                 />
                 { isAuth ? 
                 <Button variant="contained" onClick={leaveReview}>Submit</Button>

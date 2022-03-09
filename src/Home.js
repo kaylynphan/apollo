@@ -6,6 +6,8 @@ import './Home.css';
 import { useNavigate } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
 
+import TextField from '@mui/material/TextField';
+
 
 //////////////////////////////////////////////////////////
 //SEARCHBAR COMPONENT
@@ -23,13 +25,21 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
             method="get"
             autoComplete="off"
             onSubmit={onSubmit}
-            
         >
             <label htmlFor="header-search">
                 <span className="visually-hidden">
                     Search reviews 
                 </span>
             </label>
+            {/*Replaced Search Bar with an MUI Text Field*/}
+            
+            <TextField
+                id="header-search"
+                label="Search for an Artist"
+                variant="standard"
+                onChange={(event) => {setSearchQuery(event.target.value)}}
+            />
+            {/*
             <input
                 value={searchQuery}
                 onInput={(e) => setSearchQuery(e.target.value)}
@@ -38,6 +48,7 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
                 placeholder="Enter an album you wish to see a review for"
                 name="s"
             />
+            */}
 
             <button type="submit"><FaSearch/></button>
             
@@ -78,9 +89,6 @@ const Search = () => {
        
        <ul>
        	{filteredPosts.map((post) => (
-           
-               
-          
          	<div key={post.id} >
                  <Link to="/artist" class="albumtitle" state={{artist: post.artist, album: post.albums, url: post.artistImg}}>{post.artist}</Link>
              </div>
@@ -107,7 +115,6 @@ const Home = () => {
     return (
         
             <div className="Home">
-                
                 <Search/>
             </div>
         
