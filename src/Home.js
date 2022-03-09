@@ -1,16 +1,8 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-
 import Announcer from './announcer';
 import albums from "./albums.json"
-
 import './Home.css';
-import ReviewForm from './ReviewForm';
-import Post from './Post';
-import Form from './Form';
-import ArtistProfile from './ArtistProfile';
-import {firestore} from './firebase'
-
 import { useNavigate } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
 

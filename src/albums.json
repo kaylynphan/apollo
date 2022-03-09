@@ -13,7 +13,7 @@
                 "imgURL": "./albumCovers/TaylorSwift/1989.png"
             }
         }
-        },
+    },
        { "id": "2", 
         "artist": "Adele",
         "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
@@ -27,7 +27,7 @@
                 "imgURL": "./albumCovers/Adele/21.png"
             }
         }
-        },
+    },
       { "id": "3", 
         "artist": "Katy Perry",
         "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
@@ -41,7 +41,7 @@
                 "imgURL": "./albumCovers/KatyPerry/Smile.png"
             }
         }
-        },
+    },
        { "id": "4", 
         "artist": "Ed Sheeran",
         "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
@@ -55,7 +55,7 @@
                 "imgURL": "./albumCovers/EdSheeran/=.png"
             }
         }
-        }
+    }
    
 
 ]
