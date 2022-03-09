@@ -1,8 +1,6 @@
 import React from 'react';
 import './ArtistProfile.css';
-import albums from "./albums.json"
 import {useLocation} from 'react-router-dom'
-import { render } from '@testing-library/react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
@@ -38,9 +36,9 @@ const ArtistProfile = () => {
                 <h4 className="bio">Bio: {bio}</h4>
                 <h3>Here is a list of all {artist}'s albums</h3>
                 <Box sx={{ flexGrow: 1 }}>
-                    <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                        <div>{AlbumGrid}</div>
-                    </Grid>
+                    
+                    <div>{AlbumGrid}</div>
+                    
                 </Box>
             </div>
         )

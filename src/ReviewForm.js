@@ -13,52 +13,6 @@ import Typography from '@mui/material/Typography';
 import {useLocation} from 'react-router-dom'
 import {addDoc, collection} from 'firebase/firestore'
 import {db, auth} from './firebase';
-/*function AlbumSelect() {
-  const [album, setAlbum] = useState('default');
-  const location = useLocation();
-  const artist = location.state.artist;
-  const albums = location.state.album;
-  const albumlist = Object.keys(albums)
-  const handleChange = (event) => {
-    setAlbum(event.target.value);
-  };
-  const EachArtistAlbum = [];
-  for(let element in albumlist){
-    EachArtistAlbum.push(<MenuItem value={element}>{albumlist[element]}</MenuItem>)
-}
-    return (
-        
-        <FormControl fullWidth>
-            {album}
-            <InputLabel id="demo-simple-select-label">Albums</InputLabel>
-            <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                value={album}
-                label="Album"
-                onChange={(event) => {setAlbum(event.target.value)}}
-            >
-                <div>{EachArtistAlbum}</div>
-            </Select>
-        </FormControl>
-    );
-}
-
-function AlbumRating() {
-    const [value, setValue] = React.useState(0);
-
-    return (
-        <Box>
-            {value}
-            <Typography component="legend">Rating</Typography>
-            <Rating
-            name="simple-controlled"
-            value={value}
-            onChange={(event) => {setValue(event.target.value)}}
-            />
-        </Box>
-    );
-}*/
 
 function ReviewForm(props) {
     
