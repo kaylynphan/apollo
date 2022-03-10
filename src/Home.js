@@ -5,6 +5,8 @@ import albums from "./albums.json"
 import './Home.css';
 import { useNavigate } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
@@ -88,38 +90,28 @@ const Search = () => {
                  setSearchQuery={setSearchQuery}
        />
        
-       <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-        {filteredPosts.map((post) => (
-            <ImageListItem key={post.id}>
-            <img
-              src={`${post.artistImg}?w=248&fit=crop&auto=format`}
-              srcSet={`${post.artistImg}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={post.artist}
-              loading="lazy"
-            />
-            <ImageListItemBar
-              title={post.artist}
-              position="below"
-            />
-          </ImageListItem>
-        ))}
-        </ImageList>
-       
-       {/*<ul>
-       	{filteredPosts.map((post) => (
-         	<div key={post.id} >
-                 <Link to="/artist" class="albumtitle" state={{artist: post.artist, album: post.albums, url: post.artistImg}}>{post.artist}</Link>
-             </div>
-             
-        	))}
-           </ul>*/}
-
-</div>
+       <Box sx={{flexGrow: 1}}>
+           <Grid container spacing={3}>
+       	        {filteredPosts.map((post) => (
+                    <Grid item xs={4}>
+         	            <div key={post.id} >
+                            <img
+                                src={`${post.artistImg}?w=248&fit=crop&auto=format`}
+                                srcSet={`${post.artistImg}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                alt={post.artist}
+                                loading="lazy"
+                            />
+                            <Link to="/artist" class="albumtitle" state={{artist: post.artist, album: post.albums, url: post.artistImg}}>{post.artist}</Link>
+                        </div> 
+                    </Grid>
+        	    ))}
+        </Grid>
+       </Box>
+    </div>
     
     );
 
 }
-
 
 //////////////////////////////////////////////////////////
 //HOMEPAGE COMPONENT
