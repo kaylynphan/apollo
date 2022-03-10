@@ -18,3 +18,9 @@ $ npm install firebase
 $ npm start
 ```
 
+Log in through your Google Account and start posting reviews.
+Like or dislike other reviews.
+Search for your favorite artists on the home page.
+
+Apollo works best on Google Chrome.
+
