@@ -25,12 +25,15 @@ const ArtistProfile = () => {
                     <Grid item sx={{ height: 35 }}>
                         <Typography variant="h6" textAlign="center">{albumlist[element]}</Typography>
                     </Grid>
+                    <a href={albums[albumlist[element]].albumURL} target="_blank" >
                     <CardMedia
                         compontent="img"
                         sx={{ height: 200, paddingTop: 2 }}
                         image={albums[albumlist[element]].imgURL} 
                         alt={albumlist[element]}
                     />
+                    </a>
+                    
                 </Card>
                 
                 /*
@@ -63,6 +66,7 @@ const ArtistProfile = () => {
                 <img src={testurl} alt={artist}/>
                 <h4 className="bio">{bio}</h4>
                 <h3>Write a review on {artist}'s albums!</h3>
+                <p className="instruction">Click on an album cover to listen on Spotify.</p>
 
                 
                 <Grid container sx={{ justifyContent: 'center'}}>
