@@ -14,6 +14,7 @@ import { collection, getDocs, query, where, doc, updateDoc, onSnapshot } from "f
 
 
 function ReviewPost(props) {
+    const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
     const handleLikeClick = async () => {
         const newLikes = props.likes + 1;
         const thisReviewRef = doc(db, "Reviews", props.id);
@@ -38,14 +39,24 @@ function ReviewPost(props) {
                 <Typography variant="h6">Album: {props.album}</Typography>
                 <Rating name="read-only" value={props.rating} readOnly />
                 <Typography variant="body2">{props.review}</Typography>
-                <Grid container>
-                    <Button onClick={handleLikeClick} variant="outlined" size="small" startIcon={<ThumbUpAltRoundedIcon />}>
-                        Likes: {props.likes}
-                    </Button>
-                    <Button onClick={handleDislikeClick} variant="outlined" size="small" startIcon={<ThumbDownAltRoundedIcon />}>
-                        Dislikes: {props.dislikes}
-                    </Button>
-                </Grid>
+                {isAuth 
+                ? <Grid container>
+                <Button onClick={handleLikeClick} variant="outlined" size="small" startIcon={<ThumbUpAltRoundedIcon />}>
+                    Likes: {props.likes}
+                </Button>
+                <Button onClick={handleDislikeClick} variant="outlined" size="small" startIcon={<ThumbDownAltRoundedIcon />}>
+                    Dislikes: {props.dislikes}
+                </Button>
+            </Grid> : <Grid container>
+                <Button variant="outlined" size="small" startIcon={<ThumbUpAltRoundedIcon />}>
+                    Likes: {props.likes}
+                </Button>
+                <Button variant="outlined" size="small" startIcon={<ThumbDownAltRoundedIcon />}>
+                    Dislikes: {props.dislikes}
+                </Button>
+            </Grid>
+                }
+                
             </Stack>
         </Grid>
     )
