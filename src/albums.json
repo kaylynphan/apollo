@@ -2,52 +2,52 @@
 
         { "id": "1", 
             "artist": "Taylor Swift",
-            "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
+            "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67706c0000bebb3176e77a53bab3e1df01823d.jpeg?v=1646876464868",
             "albums": {
                 "Red":{
                     "year": "2012",
-                    "imgURL": "./albumCovers/TaylorSwift/Red.png",
+                    "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/taylorswift.jpeg?v=1646875718963",
                     "albumURL": "https://open.spotify.com/album/1EoDsNmgTLtmwe1BDAVxV5"
                 },
             "1989":{
                 "year": "2014",
-                "imgURL": "./albumCovers/TaylorSwift/1989.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/1989.png?v=1646876419925",
                 "albumURL": "https://open.spotify.com/album/34OkZVpuzBa9y40DCy0LPR"
             },
             "reputation":{
                 "year": "2017",
-                "imgURL": "./albumCovers/TaylorSwift/1989.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/reputation.jpeg?v=1646876592741",
                 "albumURL": "https://open.spotify.com/album/6DEjYFkNZh67HP7R9PSZvv"
             },
             "Fearless (Taylor's Version)":{
                 "year": "2021",
-                "imgURL": "./albumCovers/TaylorSwift/1989.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67616d0000b273a48964b5d9a3d6968ae3e0de.jpeg?v=1646877292183",
                 "albumURL": "https://open.spotify.com/album/4hDok0OAJd57SGIT8xuWJH"
             }
         }
     },
        { "id": "2", 
         "artist": "Adele",
-        "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/adele-640x697.jpeg?v=1646877007580",
         "albums": {
             "30":{
                 "year": "2021",
-                "imgURL": "./albumCovers/Adele/30.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/adele.jpeg?v=1646875685905",
                 "albumURL": "https://open.spotify.com/album/21jF5jlMtzo94wbxmJ18aa"
             },
             "21":{
                 "year": "2011",
-                "imgURL": "./albumCovers/Adele/21.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/21.png?v=1646876491789",
                 "albumURL": "https://open.spotify.com/album/0Lg1uZvI312TPqxNWShFXL"
             },
             "25":{
                 "year": "2015",
-                "imgURL": "./albumCovers/Adele/21.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/25.jpeg?v=1646877176017",
                 "albumURL": "https://open.spotify.com/album/3AvPX1B1HiFROvYjLb5Qwi"
             },
             "19":{
                 "year": "2008",
-                "imgURL": "./albumCovers/Adele/21.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/19.jpeg?v=1646877172531",
                 "albumURL": "https://open.spotify.com/album/59ULskOkBMij4zL8pS7mi0"
             }
 
@@ -55,52 +55,52 @@
     },
       { "id": "3", 
         "artist": "Katy Perry",
-        "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/katyperry.jpeg?v=1646875715163",
         "albums": {
             "Teenage Dream":{
                 "year": "2010",
-                "imgURL": "./albumCovers/KatyPerry/TeenageDreams.jpg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/TeenageDreams.jpg?v=1646876436594",
                 "albumURL": "https://open.spotify.com/album/2eQMC9nJE3f3hCNKlYYHL1?highlight=spotify:track:5jzKL4BDMClWqRguW5qZvh"
             },
             "Smile":{
                 "year": "2020",
-                "imgURL": "./albumCovers/KatyPerry/Smile.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/Smile.png?v=1646876440157",
                 "albumURL": "https://open.spotify.com/album/61HTU0pcDaTmotLnBQgoLs?highlight=spotify:track:3DXdjHnePKnh6oXw2ZgGSl"
             },
             "Prism":{
                 "year": "2013",
-                "imgURL": "./albumCovers/KatyPerry/Smile.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/Prism.jpeg?v=1646877168932",
                 "albumURL": "https://open.spotify.com/album/5MQBzs5YlZlE28mD9yUItn"
             },
             "Witness":{
                 "year": "2017",
-                "imgURL": "./albumCovers/KatyPerry/Smile.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/Witness.jpeg?v=1646877164830",
                 "albumURL": "https://open.spotify.com/album/0UlbGi4oAth8s6rwaGSU8Z"
             }
         }
     },
        { "id": "4", 
         "artist": "Ed Sheeran",
-        "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/edsheeran.jpeg?v=1646875695503",
         "albums": {
             "Loose Change":{
                 "year": "2010",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/LooseChange.jpeg?v=1646876455811",
                 "albumURL": "https://open.spotify.com/album/3QbPtoOWiJqZurXXxJwaOD"
             },
             "=":{
                 "year": "2021",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/%3D.png?v=1646876458958",
                 "albumURL": "https://open.spotify.com/album/32iAEBstCjauDhyKpGjTuq"
             },
             "+":{
                 "year": "2011",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/%2B.png?v=1646877161957",
                 "albumURL": "https://open.spotify.com/album/0W5GGnapMz0VwemQvJDqa7"
             },
             "×":{
                 "year": "2014",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/x.jpeg?v=1646877158280",
                 "albumURL": "https://open.spotify.com/album/1xn54DMo2qIqBuMqHtUsFd"
             }
         }
@@ -108,319 +108,319 @@
 
     { "id": "5", 
         "artist": "The Weeknd",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/theweeknd.jpeg?v=1646875725936",
         "albums": {
             "After Hours":{
                 "year": "2020",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/AfterHours.jpeg?v=1646877154258",
                 "albumURL": "https://open.spotify.com/album/4yP0hdKOZPNshxUOjY0cZj?highlight=spotify:track:2p8IUWQDrpjuFltbdgLOag"
             },
             "Starboy":{
                 "year": "2016",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/Starboy.jpeg?v=1646877151291",
                 "albumURL": "https://open.spotify.com/album/2ODvWsOgouMbaA5xf0RkJe?highlight=spotify:track:7MXVkk9YMctZqd1Srtv4MB"
             },
             "House of Balloons":{
                 "year": "2011",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/HouseOfBalloons.jpeg?v=1646877148647",
                 "albumURL": "https://open.spotify.com/album/7zCODUHkfuRxsUjtuzNqbd"
             },
             "Kiss Land":{
                 "year": "2013",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/KissLand.jpeg?v=1646877145169",
                 "albumURL": "https://open.spotify.com/playlist/1KVvkwAuYTKazdQfHFeyv3"
             }
         }
     },
     { "id": "6", 
         "artist": "Elton John",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb0a7388b95df960b5c0da8970.jpeg?v=1646876407766",
         "albums": {
             "The Lockdown Sessions":{
                 "year": "2021",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/TheLockdownSessions.jpeg?v=1646878173872",
                 "albumURL": "https://open.spotify.com/album/7wHczdY0ek3FHnfVhk10om"
             },
             "The One":{
                 "year": "1992",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/TheOne.jpeg?v=1646878177033",
                 "albumURL": "https://open.spotify.com/album/5WbC2jwkdiRD3lcgC2SAHa?highlight=spotify:track:2stzPKoUdtHcA4LlEu2ayw"
             },
             "Empty Sky":{
                 "year": "1969",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/EmptySky.jpeg?v=1646878179661",
                 "albumURL": "https://open.spotify.com/album/2AWW5zXJBwLeroqj9D5oWV?highlight=spotify:track:58JTecMx60zODpZ134FC79"
             },
             "Goodbye Yellow Brick Road":{
                 "year": "2013",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/GoodbyeYellowBrickRoad.jpeg?v=1646878183297",
                 "albumURL": "https://open.spotify.com/album/5WupqgR68HfuHt3BMJtgun?highlight=spotify:track:4IRHwIZHzlHT1FQpRa5RdE"
             }
         }
     },
     { "id": "7", 
         "artist": "Drake",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb9e46a78c5cd2f7a8e7669980.jpeg?v=1646876531779",
         "albums": {
             "Certified Lover Boy":{
                 "year": "2021",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/7-CertifiedLoverBoy.jpeg?v=1646878187293",
                 "albumURL": "https://open.spotify.com/album/3SpBlxme9WbeQdI9kx7KAV"
             },
             "Scorpion":{
                 "year": "2018",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/7-TakeCare.jpeg?v=1646878196883",
                 "albumURL": "https://open.spotify.com/album/1ATL5GLyefJaxhQzSPVrLX"
             },
             "Take Care":{
                 "year": "2011",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/Drake_-_Take_Care_cover.jpeg?v=1646879290847",
                 "albumURL": "https://open.spotify.com/album/6X1x82kppWZmDzlXXK3y3q?highlight=spotify:track:124NFj84ppZ5pAxTuVQYCQ"
             },
             "Nothing Was the Same":{
                 "year": "2013",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/7-NothingWasTheSame.jpeg?v=1646878205827",
                 "albumURL": "https://open.spotify.com/album/3s8Lsh6OjP2uWK6UYaTzEv"
             }
         }
     },
     { "id": "8", 
         "artist": "Beyoncé",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67616d0000b2738e67a512f460fac205174e90.jpeg?v=1646876564887",
         "albums": {
             "Dangerously in Love":{
                 "year": "2003",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/8-DangerouslyInLove.jpeg?v=1646878215340",
                 "albumURL": "https://open.spotify.com/album/6oxVabMIqCMJRYN1GqR3Vf?highlight=spotify:track:0KFuXEdOp5QfIfxHR6TJSm"
             },
             "Beyoncé":{
                 "year": "2013",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/8-Beyonce.jpeg?v=1646878221187",
                 "albumURL": "https://open.spotify.com/album/2UJwKSBUz6rtW4QLK74kQu"
             },
             "The Lion King: The Gift":{
                 "year": "2019",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/8-LionKing.jpeg?v=1646878225345",
                 "albumURL": "https://open.spotify.com/album/552zi1M53PQAX5OH4FIdTx"
             },
             "Lemonade":{
                 "year": "2016",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/8-Lemonade.jpeg?v=1646878229256",
                 "albumURL": "https://open.spotify.com/album/4X6b6POxbjX9inC7TWQd54"
             }
         }
     },
     { "id": "9", 
         "artist": "Rihanna",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb019d6873a01987cbe35888cd.jpeg?v=1646876592337",
         "albums": {
             "Anti":{
                 "year": "2016",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/9-Anti.jpeg?v=1646878786235",
                 "albumURL": "https://open.spotify.com/album/4UlGauD7ROb3YbVOFMgW5u"
             },
             "Good Girl Gone Bad":{
                 "year": "2007",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/9-GoodGirlGoneBad.jpeg?v=1646878789636",
                 "albumURL": "https://open.spotify.com/album/3JSWZWeTHF4HDGt5Eozdy7"
             },
             "Loud":{
                 "year": "2010",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/9-Loud.jpeg?v=1646878793682",
                 "albumURL": "https://open.spotify.com/album/35dJsQDEr549O5DTFUy3uM"
             },
             "A Girl like Me":{
                 "year": "2006",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/9-AGirlLikeMe.jpeg?v=1646878797738",
                 "albumURL": "https://open.spotify.com/album/2JdjS6jjOml7nt7Yjo0nnh"
             }
         }
     },
     { "id": "10", 
         "artist": "Dua Lipa",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67616d0000b273419afedd01696303371e1ba4.jpeg?v=1646876623197",
         "albums": {
             "Future Nostalgia":{
                 "year": "2020",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/10-FutureNostalgia.jpeg?v=1646878801975",
                 "albumURL": "https://open.spotify.com/album/7fJJK56U9fHixgO0HQkhtI"
             },
             "Dua Lipa":{
                 "year": "2017",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/10-DuaLipa.jpeg?v=1646878805315",
                 "albumURL": "https://open.spotify.com/album/01sfgrNbnnPUEyz6GZYlt9"
             },
             "Club Future Nostalgia":{
                 "year": "2020",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/10-ClubFutureNostalgia.jpeg?v=1646878810302",
                 "albumURL": "https://open.spotify.com/album/3W04W2HfQ5kVeByxfjbu2C"
             },
             "Live Acoustic (EP)":{
                 "year": "2017",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/10-LiveAcousticEP.jpeg?v=1646878815993",
                 "albumURL": "https://open.spotify.com/album/7ahC3nVbClJ8pqASWOIhda"
             }
         }
     },
     { "id": "11", 
         "artist": "Ariana Grande",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5ebcdce7620dc940db079bf4952.jpeg?v=1646876677402",
         "albums": {
             "Sweetener":{
                 "year": "2018",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/11-Sweetener.jpeg?v=1646878825303",
                 "albumURL": "https://open.spotify.com/album/3tx8gQqWbGwqIGZHqDNrGe"
             },
             "thank u, next":{
                 "year": "2019",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/11-thankunext.jpeg?v=1646878828478",
                 "albumURL": "https://open.spotify.com/album/2fYhqwDWXjbpjaIJPEfKFw?highlight=spotify:track:3e9HZxeyfWwjeyPAMmWSSQ"
             },
             "Dangerous Woman":{
                 "year": "2016",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/11-DangerousWoman.jpeg?v=1646878832896",
                 "albumURL": "https://open.spotify.com/album/3pdKKSqqLVIKmRTGw0x2N7?highlight=spotify:track:6RUhbFEhrvGISaQ8u2j2JN"
             },
             "Positions":{
                 "year": "2020",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/11-Positions.jpeg?v=1646878838296",
                 "albumURL": "https://open.spotify.com/album/3euz4vS7ezKGnNSwgyvKcd?highlight=spotify:track:35mvY5S1H3J2QZyna3TFe0"
             }
         }
     },
     { "id": "12", 
         "artist": "Billie Eilish",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67616d0000b273f7b7174bef6f3fbfda3a0bb7.jpeg?v=1646876729364",
         "albums": {
             "Happier Than Ever":{
                 "year": "2021",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/12-HappierThanEver.jpeg?v=1646878842417",
                 "albumURL": "https://open.spotify.com/album/0JGOiO34nwfUdDrD612dOp?highlight=spotify:track:4RVwu0g32PAqgUiJoXsdF8"
             },
             "When We All Fall Asleep, Where Do We Go?":{
                 "year": "2019",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/12-WhenWeAllFallAsleep.jpeg?v=1646878846040",
                 "albumURL": "https://open.spotify.com/album/0S0KGZnfBGSIssfF54WSJh"
             },
             "dont smile at me":{
                 "year": "2017",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/12-dontsmileatme.jpeg?v=1646878850510",
                 "albumURL": "https://open.spotify.com/album/7fRrTyKvE4Skh93v97gtcU"
             },
             "Live at Third Man Records":{
                 "year": "2019",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/12-LiveAtThirdManRecords.jpeg?v=1646878854042",
                 "albumURL": "https://open.spotify.com/playlist/6rlF9k8znFHetQBI2T9wLf"
             }
         }
     },
     { "id": "13", 
         "artist": "Kanye West",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67616d0000b273fd61ea11e50ba0b7eade9466.jpeg?v=1646876749937",
         "albums": {
             "Donda 2":{
                 "year": "2022",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/13-Donda2.jpeg?v=1646879353627",
                 "albumURL": "https://open.spotify.com/episode/5MGfN9pgwP5wwEM7Nzwsjv"
             },
             "The College Dropout":{
                 "year": "2004",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/13-TheCollegeDropout.jpeg?v=1646879361351",
                 "albumURL": "https://open.spotify.com/album/4Uv86qWpGTxf7fU7lG5X6F"
             },
             "ye":{
                 "year": "2018",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/13-Ye.jpeg?v=1646879369936",
                 "albumURL": "https://open.spotify.com/album/2Ek1q2haOnxVqhvVKqMvJe"
             },
             "Graduation":{
                 "year": "2007",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/13-Graduation.jpeg?v=1646879373216",
                 "albumURL": "https://open.spotify.com/album/4WNXpeZR1jc2NFgOAeyLMB"
             }
         }
     },
     { "id": "14", 
         "artist": "Doja Cat",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/dojacat.jpeg?v=1646875691278",
         "albums": {
             "Planet Her":{
                 "year": "2021",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/14-PlanetHer.jpeg?v=1646879376595",
                 "albumURL": "https://open.spotify.com/album/1nAQbHeOWTfQzbOoFrvndW"
             },
             "Hot Pink":{
                 "year": "2019",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/14-HotPink.jpeg?v=1646879379470",
                 "albumURL": "https://open.spotify.com/album/1MmVkhiwTH0BkNOU3nw5d3"
             },
             "Amala":{
                 "year": "2018",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/14-Amala.jpeg?v=1646879383268",
                 "albumURL": "https://open.spotify.com/album/3wOMqxNHgkga91RBC7BaZU"
             },
             "Purrr!":{
                 "year": "2014",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/14-Purrr!.jpeg?v=1646879388285",
                 "albumURL": "https://open.spotify.com/album/6qLRpElUtErtN1VJa8tS5Y"
             }
         }
     },
     { "id": "15", 
         "artist": "Nicki Minaj",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5ebaf3459f7c235fd25daf7f84f.jpeg?v=1646876782597",
         "albums": {
             "Pink Friday":{
                 "year": "2010",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/15-PinkFriday.jpeg?v=1646879392746",
                 "albumURL": "https://open.spotify.com/album/3LJhoYn4nnHmvPRO3ppbsl"
             },
             "The Pinkprint":{
                 "year": "2014",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/15-PinkPrint.jpeg?v=1646879397284",
                 "albumURL": "https://open.spotify.com/album/5qs8T6ZHSrnllnOuUk6muC"
             },
             "Playtime Is Over":{
                 "year": "2007",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/15-PlayTimeIsOver.jpeg?v=1646879400101",
                 "albumURL": "https://open.spotify.com/playlist/7xzNEiFqKLFoRXDlLgmsCY"
             },
             "Beam Me Up Scotty":{
                 "year": "2021",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/15-BeamMeUpScotty.jpeg?v=1646879403510",
                 "albumURL": "https://open.spotify.com/album/2upw5IrzeqKApIQZyx5o6r"
             }
         }
     },
     { "id": "16", 
         "artist": "The Beatles",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/thebeatles.jpeg?v=1646875722846",
         "albums": {
             "Abbey Road":{
                 "year": "1969",
-                "imgURL": "./albumCovers/EdSheeran/LooseChange.jpeg",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/16-AbbeyRoad.jpeg?v=1646879407944",
                 "albumURL": "https://open.spotify.com/album/0ETFjACtuP2ADo6LFhL6HN"
             },
             "Let It Be":{
                 "year": "1970",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/16-LetItBe.jpeg?v=1646879411891",
                 "albumURL": "https://open.spotify.com/episode/5RlHtU64GBptjfonpfOSVL"
             },
             "The Beatles":{
                 "year": "1968",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/16-TheBeatles.jpeg?v=1646879416064",
                 "albumURL": "https://open.spotify.com/album/1klALx0u4AavZNEvC4LrTL"
             },
             "A Hard Day's Night":{
                 "year": "1964",
-                "imgURL": "./albumCovers/EdSheeran/=.png",
+                "imgURL": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/16-AHardDay'sNight.jpeg?v=1646879419997",
                 "albumURL": "https://open.spotify.com/album/6wCttLq0ADzkPgtRnUihLV?highlight=spotify:track:5J2CHimS7dWYMImCHkEFaJ"
             }
         }
     },
     { "id": "17", 
         "artist": "Saweetie",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb08508fea5d4e92cf4d221834.jpeg?v=1646876817936",
         "albums": {
             "Pretty Summer Playlist: Season 1":{
                 "year": "2021",
@@ -441,7 +441,7 @@
     },
     { "id": "18", 
         "artist": "Kali Uchis",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67616d0000b2731b0c10e68eabd81a4cff215c.jpeg?v=1646876863563",
         "albums": {
             "Isolation":{
                 "year": "2018",
@@ -467,7 +467,7 @@
     },
     { "id": "19", 
         "artist": "Olivia Rodrigo",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb8885ead433869bbbe56dd2da.jpeg?v=1646876891125",
         "albums": {
             "Sour":{
                 "year": "2021",
@@ -488,7 +488,7 @@
     },
     { "id": "20", 
         "artist": "H.E.R.",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb7b05445e212ac49d9ed4c310.jpeg?v=1646876916062",
         "albums": {
             "I Used to Know Her":{
                 "year": "2019",
@@ -514,7 +514,7 @@
     },
     { "id": "21", 
         "artist": "Megan Thee Stallion",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/megan-thee-stallion-dababy.jpeg?v=1646876957726",
         "albums": {
             "Good News":{
                 "year": "2020",
