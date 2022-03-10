@@ -26,9 +26,8 @@ function ArtistPage(props){
     return (
         <div>
             <ArtistProfile artistName={props.artistName}/>
-            <ListOfReviewPosts artistName={props.artistName} submissions={submissions} handleSubmissions={handleSubmissions}/>
             <ReviewForm artistName={props.artistName} handleSubmissions={handleSubmissions}/>
-            
+            <ListOfReviewPosts artistName={props.artistName} submissions={submissions} handleSubmissions={handleSubmissions}/>
         </div>
     );
 }
