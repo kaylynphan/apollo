@@ -101,6 +101,7 @@ function ReviewForm(props) {
                     variant="outlined"
                     size="small" value={review} 
                     onChange={(event) => {setReview(event.target.value)}}
+                    inputProps={{maxLength: 140}}
                 />
                 { isAuth ? 
                 <Button variant="contained" onClick={leaveReview}>Submit</Button>
