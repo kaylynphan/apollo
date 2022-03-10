@@ -71,11 +71,13 @@ function ListOfReviewPosts(props) {
     }, [props.submissions]);
 
     return (
-        <Paper elevation={3} sx={{ width: 400, p: 3 }}>
+        <Paper elevation={3} sx={{ width: 0.96, p: 3 }}>
             <Typography variant="h5">Read Reviews for {artist}</Typography>
             {/*Here we would map to the reviews in the database */}
-            <Stack>
+            <Grid container spacing={3}>
+                
                 {postList.map((value) => (
+                    <Grid item xs={4}>
                     <ReviewPost 
                         album = {value.album}
                         rating = {value.rating}
@@ -86,9 +88,10 @@ function ListOfReviewPosts(props) {
                         id = {value.id}
                         handleSubmissions = {props.handleSubmissions}
                     />
+                    </Grid>
                 ))}
 
-            </Stack>
+            </Grid>
         </Paper>
     )
 }

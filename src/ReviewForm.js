@@ -48,7 +48,7 @@ function ReviewForm(props) {
 }
 
     return (
-        <Paper elevation={3} sx={{ width: 400, p: 3 }}>
+        <Paper elevation={3} sx={{ width: 0.965, p: 3 }}>
             <Typography variant="h4">Submit a Review</Typography>
             <Stack spacing={2} sx={{ p : 2}}>
                 <TextField 
