@@ -10,7 +10,7 @@ const ArtistProfile = () => {
     const albums = location.state.album;
     const testurl = location.state.url;
     const albumlist = Object.keys(albums)
-    const bio = "This artist is a person. Born on this day. Became famous blah blah blah"
+    const bio = location.state.bio;
     const url = "https://www.weact.org/wp-content/uploads/2016/10/Blank-profile.png";
     let str = ""
     const AlbumGrid = [];
@@ -34,11 +34,10 @@ const ArtistProfile = () => {
 
     return (
             <div className="artistprofile">
-                <h2>Artist: {artist} </h2>
+                <h2>{artist} </h2>
                 <img src={testurl} alt={artist}/>
-                <p>Here we would display reviews for {artist}'s albums.</p>
-                <h4 className="bio">Bio: {bio}</h4>
-                <h3>Here is a list of all {artist}'s albums</h3>
+                <h4 className="bio">{bio}</h4>
+                <h3>Here is a list of {artist}'s albums</h3>
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>
                         {AlbumGrid}
