@@ -22,65 +22,38 @@ const ArtistProfile = () => {
         AlbumGrid.push(
     
                 <Card sx={{ width: 200, display: 'flex', flexDirection: 'column', padding: 1 }}>
-                    <Grid item sx={{ height: 35 }}>
-                        <Typography variant="h6" textAlign="center">{albumlist[element]}</Typography>
-                    </Grid>
-                    <a href={albums[albumlist[element]].albumURL} target="_blank" >
-                    <CardMedia
-                        compontent="img"
-                        sx={{ height: 200, paddingTop: 2 }}
-                        image={albums[albumlist[element]].imgURL} 
-                        alt={albumlist[element]}
-                    />
-                    </a>
-                    
-                </Card>
-                
-                /*
-                <div className = "album">
-                   
-                    <h4>{albumlist[element]}</h4>
                     <a href={albums[albumlist[element]].albumURL} target="_blank">
-                    <img src={albums[albumlist[element]].imgURL} alt={albumlist[element]}/>
-                    </a>             
-                </div>
-                */
-                
+                        <CardMedia
+                            compontent="img"
+                            sx={{ height: 200, paddingTop: 2 }}
+                            image={albums[albumlist[element]].imgURL} 
+                            alt={albumlist[element]}
+                        />
+                    </a>
+                    <Grid item sx={{ height: 35, paddingTop: 1}}>
+                        <Typography variant="body2" textAlign="center">{albumlist[element]}</Typography>
+                    </Grid>
+                </Card>          
             )
     }
 
-    /*
-    for(let element in albumlist){
-        str += albumlist[element];
-        if (element < albumlist.length - 1){
-            str += ", "
-        }
-    }
-    */
-    
-        
-
     return (
-            <div className="artistprofile">
-                <h2>{artist} </h2>
-                <img src={testurl} alt={artist}/>
-                <h4 className="bio">{bio}</h4>
-                <h3>Write a review on {artist}'s albums!</h3>
-                <p className="instruction">Click on an album cover to listen on Spotify.</p>
-
-                
-                <Grid container sx={{ justifyContent: 'center'}}>
-                    <Grid item sx={{ width: 900, columns: 4, justifyContent: 'space-between' }}>
-                        {AlbumGrid}
-                    </Grid>
-                </Grid>
-                
-            </div>
-    )
-    
-            
+        <div className="artistprofile">
         
-    
+            <Typography variant="h3" textAlign="center">{artist} </Typography>
+            <img src={testurl} alt={artist}/>
+            <Typography variant="body1" textAlign="center">{bio}</Typography>
+            <Typography variant="h6" textAlign="center">Write a review on {artist}'s albums!</Typography>
+            
+            <Grid container sx={{ justifyContent: 'center'}}>
+                <Grid item sx={{ width: 900, columns: 4, justifyContent: 'bottom' }}>
+                    {AlbumGrid}
+                </Grid>
+            </Grid>
+        
+                
+        </div>
+    )
 }
 
 export default ArtistProfile;
