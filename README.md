@@ -18,3 +18,5 @@ $ npm install firebase
 $ npm start
 ```
 
+Apollo works best on Google Chrome.
+
