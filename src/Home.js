@@ -41,7 +41,7 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
             <TextField
                 id="header-search"
                 label="Search for an Artist"
-                variant="standard"
+                variant="outlined"
                 onChange={(event) => {setSearchQuery(event.target.value)}}
             />
             {/*
@@ -85,12 +85,26 @@ const Search = () => {
     return (
 	<div>
        <Announcer message={`${filteredPosts.length} posts`} />
-       <SearchBar
-		searchQuery={searchQuery}
-                 setSearchQuery={setSearchQuery}
-       />
+       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+
+       <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+        {filteredPosts.map((post) => (
+            <ImageListItem key={post.id}>
+            <img
+                src={`${post.artistImg}?w=248&fit=crop&auto=format`}
+                srcSet={`${post.artistImg}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                alt={post.artist}
+                loading="lazy"
+            />
+            <ImageListItemBar
+                title={<Link to="/artist" class="albumtitle" state={{artist: post.artist, album: post.albums, url: post.artistImg}}>{post.artist}</Link>}
+                position="below"
+            />
+            </ImageListItem>
+        ))}
+        </ImageList>
        
-       <Box sx={{flexGrow: 1}}>
+       {/*<Box sx={{flexGrow: 1}}>
            <Grid container spacing={3}>
        	        {filteredPosts.map((post) => (
                     <Grid item xs={4}>
@@ -106,7 +120,7 @@ const Search = () => {
                     </Grid>
         	    ))}
         </Grid>
-       </Box>
+        </Box>*/}
     </div>
     
     );
