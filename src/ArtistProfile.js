@@ -35,8 +35,11 @@ const ArtistProfile = () => {
                 
                 /*
                 <div className = "album">
+                   
                     <h4>{albumlist[element]}</h4>
+                    <a href={albums[albumlist[element]].albumURL} target="_blank">
                     <img src={albums[albumlist[element]].imgURL} alt={albumlist[element]}/>
+                    </a>             
                 </div>
                 */
                 
@@ -60,6 +63,7 @@ const ArtistProfile = () => {
                 <img src={testurl} alt={artist}/>
                 <h4 className="bio">{bio}</h4>
                 <h3>Write a review on {artist}'s albums!</h3>
+
                 
                 <Grid container sx={{ justifyContent: 'center'}}>
                     <Grid item sx={{ width: 900, columns: 4, justifyContent: 'space-between' }}>

@@ -104,7 +104,7 @@ function ReviewForm(props) {
                 />
                 { isAuth ? 
                 <Button variant="contained" onClick={leaveReview}>Submit</Button>
-                :<Button variant="contained">Log In to leave a review!</Button>
+                :<Button variant="contained">Log In to like, dislike, or leave a review!</Button>
                 }
                 
             </Stack>
