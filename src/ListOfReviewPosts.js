@@ -71,7 +71,7 @@ function ListOfReviewPosts(props) {
     }, [props.submissions]);
 
     return (
-        <Paper elevation={3} sx={{ width: 0.96, p: 3 }}>
+        <Paper elevation={3} sx={{ width: 0.965, p: 3 }}>
             <Typography variant="h5">Read Reviews for {artist}</Typography>
             {/*Here we would map to the reviews in the database */}
             <Grid container spacing={3}>
