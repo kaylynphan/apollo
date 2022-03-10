@@ -13,7 +13,7 @@ const ArtistProfile = () => {
     const albums = location.state.album;
     const testurl = location.state.url;
     const albumlist = Object.keys(albums)
-    const bio = "This artist is a person. Born on this day. Became famous blah blah blah"
+    const bio = location.state.bio;
     const url = "https://www.weact.org/wp-content/uploads/2016/10/Blank-profile.png";
     //let str = ""
     console.log(albums);
@@ -22,7 +22,9 @@ const ArtistProfile = () => {
         AlbumGrid.push(
     
                 <Card sx={{ width: 200, display: 'flex', flexDirection: 'column', padding: 1 }}>
-                    <Typography variant="h6" textAlign="center">{albumlist[element]}</Typography>
+                    <Grid item sx={{ height: 35 }}>
+                        <Typography variant="h6" textAlign="center">{albumlist[element]}</Typography>
+                    </Grid>
                     <CardMedia
                         compontent="img"
                         sx={{ height: 200, paddingTop: 2 }}
@@ -54,18 +56,16 @@ const ArtistProfile = () => {
 
     return (
             <div className="artistprofile">
-                <h2>Artist: {artist} </h2>
+                <h2>{artist} </h2>
                 <img src={testurl} alt={artist}/>
-                <p>Here we would display reviews for {artist}'s albums.</p>
-                <h4 className="bio">Bio: {bio}</h4>
-                <h3>Here is a list of all {artist}'s albums</h3>
+                <h4 className="bio">{bio}</h4>
+                <h3>Write a review on {artist}'s albums!</h3>
                 
                 <Grid container sx={{ justifyContent: 'center'}}>
-                    <Grid item sx={{ width: 880, columns: 4, justifyContent: 'space-between'}}>
+                    <Grid item sx={{ width: 900, columns: 4, justifyContent: 'space-between' }}>
                         {AlbumGrid}
                     </Grid>
                 </Grid>
-                
                 
             </div>
     )

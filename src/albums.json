@@ -2,6 +2,7 @@
 
         { "id": "1", 
             "artist": "Taylor Swift",
+            "bio": "Taylor Swift, in full Taylor Alison Swift, (born December 13, 1989, West Reading, Pennsylvania, U.S.), American pop and country music singer-songwriter whose tales of young heartache achieved widespread success in the early 21st century.",
             "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67706c0000bebb3176e77a53bab3e1df01823d.jpeg?v=1646876464868",
             "albums": {
                 "Red":{
@@ -28,6 +29,7 @@
     },
        { "id": "2", 
         "artist": "Adele",
+        "bio": "Adele, byname of Adele Laurie Blue Adkins, (born May 5, 1988, Tottenham, London, England), English pop singer and songwriter whose soulful emotive voice and traditionally crafted songs made her one of the most broadly popular performers of her generation. ",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/adele-640x697.jpeg?v=1646877007580",
         "albums": {
             "30":{
@@ -55,6 +57,7 @@
     },
       { "id": "3", 
         "artist": "Katy Perry",
+        "bio": "Katy Perry, original name Katheryn Elizabeth Hudson, (born October 25, 1984, Santa Barbara, California, U.S.), American pop singer who gained fame for a string of anthemic and often sexually suggestive hit songs, as well as for a playfully cartoonish sense of style. ",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/katyperry.jpeg?v=1646875715163",
         "albums": {
             "Teenage Dream":{
@@ -81,6 +84,7 @@
     },
        { "id": "4", 
         "artist": "Ed Sheeran",
+        "bio": "Edward Christopher \"Ed\" Sheeran is a famous English singer and songwriter, who has won the hearts of people all over the world with his melodic voice. He is an occasional rapper and actor as well. His popularity increased especially after the release of his first album ‘+’ and after a guest appearance was made by him on Taylor Swift's fourth studio album 'Red.’",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/edsheeran.jpeg?v=1646875695503",
         "albums": {
             "Loose Change":{
@@ -108,6 +112,7 @@
 
     { "id": "5", 
         "artist": "The Weeknd",
+        "bio": "The Weeknd, byname of Abel Makkonen Tesfaye, (born February 16, 1990, Toronto, Ontario, Canada), Canadian rhythm-and-blues singer and songwriter who was perhaps best known for his explicit songs about sex and drugs, many of which were autobiographical, and for his soaring falsetto and its singular tremolo.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/theweeknd.jpeg?v=1646875725936",
         "albums": {
             "After Hours":{
@@ -134,6 +139,7 @@
     },
     { "id": "6", 
         "artist": "Elton John",
+        "bio": "Elton John, in full Sir Elton Hercules John, original name Reginald Kenneth Dwight, (born March 25, 1947, Pinner, Middlesex, England), British singer, composer, and pianist who was one of the most popular entertainers of the late 20th century. He fused as many strands of popular music and stylistic showmanship as Elvis Presley in a concert and recording career that included the sale of hundreds of millions of records.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb0a7388b95df960b5c0da8970.jpeg?v=1646876407766",
         "albums": {
             "The Lockdown Sessions":{
@@ -160,6 +166,7 @@
     },
     { "id": "7", 
         "artist": "Drake",
+        "bio": "Aubrey Drake Graham (born October 24, 1986) is a Canadian rapper, singer, and actor. Gaining recognition by starring as Jimmy Brooks in the CTV teen drama series Degrassi: The Next Generation (2001–08), Drake pursued a career in music releasing his debut mixtape Room for Improvement in 2006; he subsequently released the mixtapes Comeback Season (2007) and So Far Gone (2009) before signing with Young Money Entertainment.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb9e46a78c5cd2f7a8e7669980.jpeg?v=1646876531779",
         "albums": {
             "Certified Lover Boy":{
@@ -186,6 +193,7 @@
     },
     { "id": "8", 
         "artist": "Beyoncé",
+        "bio": "Beyoncé, in full Beyoncé Giselle Knowles, (born September 4, 1981, Houston, Texas, U.S.), American singer-songwriter and actress who achieved fame in the late 1990s as the lead singer of the R&B group Destiny’s Child and then launched a hugely successful solo career.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67616d0000b2738e67a512f460fac205174e90.jpeg?v=1646876564887",
         "albums": {
             "Dangerously in Love":{
@@ -212,6 +220,7 @@
     },
     { "id": "9", 
         "artist": "Rihanna",
+        "bio": "Rihanna, byname of Robyn Rihanna Fenty, (born February 20, 1988, St. Michael parish, Barbados), Barbadian pop and rhythm-and-blues (R&B) singer who became a worldwide star in the early 21st century, known for her distinctive and versatile voice and for her fashionable appearance. She was also known for her beauty and fashion lines. ",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb019d6873a01987cbe35888cd.jpeg?v=1646876592337",
         "albums": {
             "Anti":{
@@ -238,6 +247,7 @@
     },
     { "id": "10", 
         "artist": "Dua Lipa",
+        "bio": "Dua Lipa (/ˈduːə ˈliːpə/; Albanian: [ˈdua ˈlipa]; born 22 August 1995) is an English singer and songwriter. After working as a model, she signed with Warner Bros. Records in 2014 and released her eponymous debut album in 2017. ",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67616d0000b273419afedd01696303371e1ba4.jpeg?v=1646876623197",
         "albums": {
             "Future Nostalgia":{
@@ -264,6 +274,7 @@
     },
     { "id": "11", 
         "artist": "Ariana Grande",
+        "bio": "Ariana Grande, in full Ariana Grande-Butera, (born June 26, 1993, Boca Raton, Florida, U.S.), American pop singer and actress who burst onto the pop music scene in the early 2010s and became one of the genre’s most successful performers, known for her four-octave range.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5ebcdce7620dc940db079bf4952.jpeg?v=1646876677402",
         "albums": {
             "Sweetener":{
@@ -290,6 +301,7 @@
     },
     { "id": "12", 
         "artist": "Billie Eilish",
+        "bio": "Billie Eilish, in full Billie Eilish Pirate Baird O’Connell, (born December 18, 2001, Los Angeles, California, U.S.), American singer-songwriter who first gained recognition in 2015 for the song “Ocean Eyes” and became, in 2020, the youngest person ever to win a Grammy for album of the year. ",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67616d0000b273f7b7174bef6f3fbfda3a0bb7.jpeg?v=1646876729364",
         "albums": {
             "Happier Than Ever":{
@@ -316,6 +328,7 @@
     },
     { "id": "13", 
         "artist": "Kanye West",
+        "bio": "Kanye West, legal name Ye, (born June 8, 1977, Atlanta, Georgia, U.S.), American producer, rapper, and fashion designer who parlayed his production success in the late 1990s and early 2000s into a career as a popular, critically acclaimed solo artist.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67616d0000b273fd61ea11e50ba0b7eade9466.jpeg?v=1646876749937",
         "albums": {
             "Donda 2":{
@@ -342,6 +355,7 @@
     },
     { "id": "14", 
         "artist": "Doja Cat",
+        "bio": "Amala Ratna Zandile Dlamini (born October 21, 1995), known professionally as Doja Cat (/ˈdoʊdʒə/ DOH-jə), is an American rapper, singer, and songwriter. Born and raised in Los Angeles, she began making and releasing music on SoundCloud as a teenager. Her song \"So High\" caught the attention of Kemosabe and RCA Records, with which she signed a joint record deal at the age of 17, subsequently releasing her debut EP Purrr! in 2014.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/dojacat.jpeg?v=1646875691278",
         "albums": {
             "Planet Her":{
@@ -368,6 +382,7 @@
     },
     { "id": "15", 
         "artist": "Nicki Minaj",
+        "bio": "Nicki Minaj, original name Onika Tanya Maraj, (born December 8, 1982, St. James, Trinidad and Tobago), Trinidadian-born singer, songwriter, television personality, and actress who was known for her flowing quick-spoken rap style and for her provocative lyrics. She complemented her music with a bold persona that included colourful wigs and risqué clothing.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5ebaf3459f7c235fd25daf7f84f.jpeg?v=1646876782597",
         "albums": {
             "Pink Friday":{
@@ -394,6 +409,7 @@
     },
     { "id": "16", 
         "artist": "The Beatles",
+        "bio": "the Beatles, formerly called the Quarrymen or the Silver Beatles, byname Fab Four, British musical quartet and a global cynosure for the hopes and dreams of a generation that came of age in the 1960s. The principal members were John Lennon (b. October 9, 1940, Liverpool, Merseyside, England—d. December 8, 1980, New York, New York, U.S.), Paul McCartney (in full Sir James Paul McCartney; b. June 18, 1942, Liverpool), George Harrison (b. February 25, 1943, Liverpool—d. November 29, 2001, Los Angeles, California, U.S.), and Ringo Starr (byname of Richard Starkey; b. July 7, 1940, Liverpool). ",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/thebeatles.jpeg?v=1646875722846",
         "albums": {
             "Abbey Road":{
@@ -420,6 +436,7 @@
     },
     { "id": "17", 
         "artist": "Saweetie",
+        "bio": "Diamonté Quiava Valentin Harper (born July 2, 1993), known professionally as Saweetie (/səˈwiːti/),[4] is an American rapper. After the release of her debut single \"Icy Grl\" in 2018, she was signed to her then-manager Max Gousse's record label Artistry Worldwide, a subsidiary of Warner Records.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb08508fea5d4e92cf4d221834.jpeg?v=1646876817936",
         "albums": {
             "Pretty Summer Playlist: Season 1":{
@@ -441,6 +458,7 @@
     },
     { "id": "18", 
         "artist": "Kali Uchis",
+        "bio": "Karly-Marina Loaiza (born July 17, 1994), known professionally as Kali Uchis (/ˈuːtʃis/ OO-chees), is an American singer and songwriter. She released her debut mixtape, Drunken Babble, in 2012, which was followed by her debut EP, Por Vida, released in 2015. In 2018, Uchis released her debut studio album Isolation to widespread acclaim.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab67616d0000b2731b0c10e68eabd81a4cff215c.jpeg?v=1646876863563",
         "albums": {
             "Isolation":{
@@ -467,6 +485,7 @@
     },
     { "id": "19", 
         "artist": "Olivia Rodrigo",
+        "bio": "Olivia Isabel Rodrigo (born February 20, 2003) is an American singer-songwriter and actress. She gained recognition with her lead roles on the Disney television programmes Bizaardvark and High School Musical: The Musical: The Series. After signing with Geffen and Interscope Records, Rodrigo released her debut single \"Drivers License\" in 2021, which broke various records and became one of the best-selling songs of the year, propelling her to mainstream fame. ",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb8885ead433869bbbe56dd2da.jpeg?v=1646876891125",
         "albums": {
             "Sour":{
@@ -488,6 +507,7 @@
     },
     { "id": "20", 
         "artist": "H.E.R.",
+        "bio": "Gabriella Sarmiento Wilson (born June 27, 1997), known professionally as H.E.R. (pronounced \"her\", an initialism for \"Having Everything Revealed\"), is an American R&B singer. After initial music appearances and singles under her real name, Wilson re-emerged in 2016 as H.E.R., releasing her debut EP H.E.R. Volume 1 under RCA, followed by four subsequent EPs. Her first compilation album H.E.R. (2017), consisting of tracks from her first two EPs plus six additional songs, was nominated for five Grammy Awards, winning Best R&B Performance and Best R&B Album.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/ab6761610000e5eb7b05445e212ac49d9ed4c310.jpeg?v=1646876916062",
         "albums": {
             "I Used to Know Her":{
@@ -514,6 +534,7 @@
     },
     { "id": "21", 
         "artist": "Megan Thee Stallion",
+        "bio": "Megan Jovon Ruth Pete (born February 15, 1995), known professionally as Megan Thee Stallion (pronounced \"Megan The Stallion\"), is an American rapper. Originally from Houston, Texas, she first garnered attention when videos of her freestyling became popular on social media platforms such as Instagram. Megan Thee Stallion signed to 300 Entertainment in 2018 where she released the mixtape Fever (2019) and the extended play Suga (2020) both of which peaked in the top 10 of the Billboard 200.",
         "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/megan-thee-stallion-dababy.jpeg?v=1646876957726",
         "albums": {
             "Good News":{

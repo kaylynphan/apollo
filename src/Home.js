@@ -107,7 +107,7 @@ const Search = () => {
                                     <Link 
                                         to="/artist" 
                                         style={{color: 'black', fontSize: '12pt'}}
-                                        state={{artist: post.artist, album: post.albums, url: post.artistImg}}>
+                                        state={{artist: post.artist, album: post.albums, url: post.artistImg, bio: post.bio}}>
                                         {post.artist}
                                     </Link>
                                 </Button>
