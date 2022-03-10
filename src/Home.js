@@ -5,6 +5,8 @@ import albums from "./albums.json"
 import './Home.css';
 import { useNavigate } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
 
 //////////////////////////////////////////////////////////
@@ -76,23 +78,22 @@ const Search = () => {
        />
        
        
-       <ul>
+       <Box sx={{flexGrow: 1}}>
+           <Grid container spacing={3}>
        	{filteredPosts.map((post) => (
            
-               
-          
+               <Grid item xs={4}>
          	<div key={post.id} >
                  <Link to="/artist" class="albumtitle" state={{artist: post.artist, album: post.albums, url: post.artistImg}}>{post.artist}</Link>
-             </div>
+             </div> </Grid>
              
         	))}
-       </ul>
+       </Grid></Box>
 </div>
     
     );
 
 }
-
 
 //////////////////////////////////////////////////////////
 //HOMEPAGE COMPONENT
