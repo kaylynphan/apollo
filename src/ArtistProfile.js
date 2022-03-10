@@ -22,12 +22,14 @@ const ArtistProfile = () => {
         AlbumGrid.push(
     
                 <Card sx={{ width: 200, display: 'flex', flexDirection: 'column', padding: 1 }}>
-                    <CardMedia
-                        compontent="img"
-                        sx={{ height: 200, paddingTop: 2 }}
-                        image={albums[albumlist[element]].imgURL} 
-                        alt={albumlist[element]}
-                    />
+                    <a href={albums[albumlist[element]].albumURL} target="_blank">
+                        <CardMedia
+                            compontent="img"
+                            sx={{ height: 200, paddingTop: 2 }}
+                            image={albums[albumlist[element]].imgURL} 
+                            alt={albumlist[element]}
+                        />
+                    </a>
                     <Grid item sx={{ height: 35, paddingTop: 1}}>
                         <Typography variant="body2" textAlign="center">{albumlist[element]}</Typography>
                     </Grid>
