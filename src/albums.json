@@ -2,7 +2,7 @@
 
         { "id": "1", 
             "artist": "Taylor Swift",
-            "artistImg": "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+            "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/taylorswift.jpeg?v=1646875718963",
             "albums": {
                 "Red":{
                     "year": "2012",
@@ -28,7 +28,7 @@
     },
        { "id": "2", 
         "artist": "Adele",
-        "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/adele.jpeg?v=1646875685905",
         "albums": {
             "30":{
                 "year": "2021",
@@ -55,7 +55,7 @@
     },
       { "id": "3", 
         "artist": "Katy Perry",
-        "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/katyperry.jpeg?v=1646875715163",
         "albums": {
             "Teenage Dream":{
                 "year": "2010",
@@ -81,7 +81,7 @@
     },
        { "id": "4", 
         "artist": "Ed Sheeran",
-        "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/edsheeran.jpeg?v=1646875695503",
         "albums": {
             "Loose Change":{
                 "year": "2010",
@@ -108,7 +108,7 @@
 
     { "id": "5", 
         "artist": "The Weeknd",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/theweeknd.jpeg?v=1646875725936",
         "albums": {
             "After Hours":{
                 "year": "2020",
@@ -342,7 +342,7 @@
     },
     { "id": "14", 
         "artist": "Doja Cat",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/dojacat.jpeg?v=1646875691278",
         "albums": {
             "Planet Her":{
                 "year": "2021",
@@ -394,7 +394,7 @@
     },
     { "id": "16", 
         "artist": "The Beatles",
-        "artistImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-TfsaKW04nQqScGOF-f2-jGE9b6ra2LZD7tL1cvAUSTQg1n-n",
+        "artistImg": "https://cdn.glitch.global/aa10a79d-5367-4363-b3f6-933ef6a6ceaa/thebeatles.jpeg?v=1646875722846",
         "albums": {
             "Abbey Road":{
                 "year": "1969",
