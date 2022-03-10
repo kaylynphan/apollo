@@ -36,9 +36,8 @@ const ArtistProfile = () => {
             <div className="artistprofile">
                 <h2>Artist: {artist} </h2>
                 <img src={testurl} alt={artist}/>
-                <p>Here we would display reviews for {artist}'s albums.</p>
                 <h4 className="bio">Bio: {bio}</h4>
-                <h3>Here is a list of all {artist}'s albums</h3>
+                <h3>Write a review on {artist}'s albums! </h3>
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>
                         {AlbumGrid}
