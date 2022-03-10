@@ -30,26 +30,27 @@ const ArtistProfile = () => {
                     />
                     <Grid item sx={{ height: 35, paddingTop: 1}}>
                         <Typography variant="body2" textAlign="center">{albumlist[element]}</Typography>
-                        <Typography variant="body2">{albumlist[element].year}</Typography>
                     </Grid>
                 </Card>          
             )
     }
 
     return (
-            <div className="artistprofile">
-                <h2>{artist} </h2>
-                <img src={testurl} alt={artist}/>
-                <h4 className="bio">{bio}</h4>
-                <h3>Write a review on {artist}'s albums!</h3>
-                
-                <Grid container sx={{ justifyContent: 'center'}}>
-                    <Grid item sx={{ width: 900, columns: 4, justifyContent: 'bottom' }}>
-                        {AlbumGrid}
-                    </Grid>
+        <div className="artistprofile">
+        
+            <Typography variant="h3" textAlign="center">{artist} </Typography>
+            <img src={testurl} alt={artist}/>
+            <Typography variant="body1" textAlign="center">{bio}</Typography>
+            <Typography variant="h6" textAlign="center">Write a review on {artist}'s albums!</Typography>
+            
+            <Grid container sx={{ justifyContent: 'center'}}>
+                <Grid item sx={{ width: 900, columns: 4, justifyContent: 'bottom' }}>
+                    {AlbumGrid}
                 </Grid>
+            </Grid>
+        
                 
-            </div>
+        </div>
     )
 }
 
