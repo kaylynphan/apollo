@@ -18,8 +18,11 @@ const ArtistProfile = () => {
         AlbumGrid.push(
             <Grid item xs={6}>
                 <div className = "album">
+                   
                     <h4>{albumlist[element]}</h4>
+                    <a href={albums[albumlist[element]].albumURL} target="_blank">
                     <img src={albums[albumlist[element]].imgURL} alt={albumlist[element]}/>
+                    </a>             
                 </div>
             </Grid> )
     }
@@ -38,6 +41,7 @@ const ArtistProfile = () => {
                 <img src={testurl} alt={artist}/>
                 <h4 className="bio">{bio}</h4>
                 <h3>Write a review on {artist}'s albums!</h3>
+                <p className="instruction">Click on an album cover to listen on Spotify.</p>
 
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>

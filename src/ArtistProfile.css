@@ -13,6 +13,9 @@ img {
 h3 {
     text-align: center;
 }
+.instruction{
+  text-align: center;
+}
 .album {
   background-color: white;
   Border-radius: 10px;
