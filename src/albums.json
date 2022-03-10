@@ -2,7 +2,7 @@
 
         { "id": "1", 
             "artist": "Taylor Swift",
-            "artistImg": "https://en.wikipedia.org/wiki/Taylor_Swift_videography#/media/File:Taylor_Swift_NYC_Cats_Premiere_2019.png",
+            "artistImg": "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
             "albums": {
                 "Red":{
                     "year": "2012",
