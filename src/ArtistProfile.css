@@ -24,6 +24,9 @@ h3 {
   color: black;
 }
 .bio {
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   color: gray;
+  max-width: 60ch;
+  text-align: center;
 }
