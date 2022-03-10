@@ -22,37 +22,19 @@ const ArtistProfile = () => {
         AlbumGrid.push(
     
                 <Card sx={{ width: 200, display: 'flex', flexDirection: 'column', padding: 1 }}>
-                    <Grid item sx={{ height: 35 }}>
-                        <Typography variant="h6" textAlign="center">{albumlist[element]}</Typography>
-                    </Grid>
                     <CardMedia
                         compontent="img"
                         sx={{ height: 200, paddingTop: 2 }}
                         image={albums[albumlist[element]].imgURL} 
                         alt={albumlist[element]}
                     />
-                </Card>
-                
-                /*
-                <div className = "album">
-                    <h4>{albumlist[element]}</h4>
-                    <img src={albums[albumlist[element]].imgURL} alt={albumlist[element]}/>
-                </div>
-                */
-                
+                    <Grid item sx={{ height: 35, paddingTop: 1}}>
+                        <Typography variant="body2" textAlign="center">{albumlist[element]}</Typography>
+                        <Typography variant="body2">{albumlist[element].year}</Typography>
+                    </Grid>
+                </Card>          
             )
     }
-
-    /*
-    for(let element in albumlist){
-        str += albumlist[element];
-        if (element < albumlist.length - 1){
-            str += ", "
-        }
-    }
-    */
-    
-        
 
     return (
             <div className="artistprofile">
@@ -62,17 +44,13 @@ const ArtistProfile = () => {
                 <h3>Write a review on {artist}'s albums!</h3>
                 
                 <Grid container sx={{ justifyContent: 'center'}}>
-                    <Grid item sx={{ width: 900, columns: 4, justifyContent: 'space-between' }}>
+                    <Grid item sx={{ width: 900, columns: 4, justifyContent: 'bottom' }}>
                         {AlbumGrid}
                     </Grid>
                 </Grid>
                 
             </div>
     )
-    
-            
-        
-    
 }
 
 export default ArtistProfile;
