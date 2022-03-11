@@ -163,6 +163,7 @@ const Home = () => {
     return (
         
             <div className="Home">
+                <img className="biglogo" src="logo.png" alt="logo" width="500px" />
                 <Search/>
             </div>
         
