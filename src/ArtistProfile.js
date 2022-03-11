@@ -20,7 +20,7 @@ const ArtistProfile = () => {
     for(let element in albumlist){
         AlbumGrid.push(
     
-                <Card sx={{ width: 200, display: 'flex', flexDirection: 'column', padding: 1 }}>
+                <Card sx={{ width: 200, display: 'flex', flexDirection: 'column', padding: 1, paddingBottom: 3 }}>
                     <a href={albums[albumlist[element]].albumURL} target="_blank">
                         <CardMedia
                             compontent="img"
@@ -46,10 +46,8 @@ const ArtistProfile = () => {
             <Typography variant="h6" textAlign="center">Write a review on {artist}'s albums!</Typography>
             <p className="instruction">Click on an album cover to listen on Spotify.</p>
             
-            <Grid container sx={{ justifyContent: 'center'}}>
-                <Grid item sx={{ width: 900, columns: 4, justifyContent: 'bottom' }}>
-                    {AlbumGrid}
-                </Grid>
+            <Grid container justifyContent='center' spacing={6}>         
+                {AlbumGrid}          
             </Grid>
         
                 
