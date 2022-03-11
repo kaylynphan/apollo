@@ -189,13 +189,19 @@
   }
   .nav {
     display: grid;
-    grid-template-columns: 1fr repeat(3,auto) 1fr;
+    Grid-template-columns: auto 1fr repeat(2,auto) 1fr auto;
     justify-items: center;
   }
+  .logo {
+    padding:5px;
+    width: 50px;
+    height: 50px;
+  }
   .left{
-    grid-column-start:2;
+    grid-column-start:3;
   }
   .indicatelogin {
+    padding: 5px;
     text-align: right;
     margin-left: auto;
   }

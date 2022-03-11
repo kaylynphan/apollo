@@ -9,10 +9,6 @@
     background-color: LavenderBlush;
 }
 
-.logo {
-    padding: 5px;
-    padding-top: 20px;
-}
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
