@@ -40,7 +40,7 @@ function App (){
             <img className="logo" src="logo.png" alt="logo"/>
             <Link class="left" to="/"> Home </ Link>
             {!isAuth ? <Link class="right" to="/login">Login</Link> : <button class="right" onClick={signUserOut}>Log Out</button>}<br/>
-            {isAuth ? <p class="indicatelogin">Posting as: {auth.currentUser.displayName} </p> : <p class="indicatelogin">You're not logged in.</p>}
+            {isAuth ? <p class="indicatelogin">Posting as: {user} </p> : <p class="indicatelogin">You're not logged in.</p>}
         </ nav>
         <Routes>
             <Route path="/" element={<Home />} />
