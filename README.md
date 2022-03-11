@@ -1,7 +1,14 @@
 <h1>apollo</h1>
 
 Apollo is a client-side React app that lets users view music album reviews and post their own.
-
+<br/>
+Developed by:
+<ul>
+  <li>Kaylyn Phan</li>
+  <li>Hyerin Lee</li>
+  <li>Madurya Suresh</li>
+  <li>Pavana Atawale</li>
+</ul>
 <img src="./public/logo.png" alt="logo" width="200" />
 
 
