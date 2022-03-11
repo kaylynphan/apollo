@@ -16,7 +16,7 @@ $ npm install react-router-dom
 $ npm install react-icons
 $ npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 $ npm install firebase
-$ npm start
+$ npm start # View app on localhost:3000
 ```
 
 <h4>Features:</h4>
