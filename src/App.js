@@ -36,9 +36,9 @@ function App (){
     
     return (
     <Router>
-        <nav>
-            <Link to="/"> Home </ Link>
-            {!isAuth ? <Link to="/login">Login</Link> : <button onClick={signUserOut}>Log Out</button>}<br/>
+        <nav class="nav">
+            <Link class="left" to="/"> Home </ Link>
+            {!isAuth ? <Link class="right" to="/login">Login</Link> : <button class="right" onClick={signUserOut}>Log Out</button>}<br/>
             {isAuth ? <p class="indicatelogin">Posting as: {user} </p> : <p class="indicatelogin">You're not logged in.</p>}
         </ nav>
         <Routes>

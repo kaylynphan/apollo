@@ -187,8 +187,17 @@
     overflow: hidden;
     overflow-y: auto;
   }
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr repeat(3,auto) 1fr;
+    justify-items: center;
+  }
+  .left{
+    grid-column-start:2;
+  }
   .indicatelogin {
-    text-align:right;
-   
+    text-align: right;
+    background-color: gray;
+    margin-left: auto;
   }
   
