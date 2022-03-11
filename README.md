@@ -31,4 +31,4 @@ $ npm start
 <li>Apollo works best on Google Chrome.</li>
   
 </ul>
-
+<h4><a href="https://docs.google.com/presentation/d/1E9e-s0ZPjXZqYnwp0iGzFRysuPv_kRMmLahkLUeIxfk/edit?usp=sharing" target="_blank">Here</a> is the link to our presentation. </h4>
