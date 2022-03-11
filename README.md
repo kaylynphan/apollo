@@ -2,7 +2,8 @@
 
 Apollo is a client-side React app that lets users view music album reviews and post their own.
 
-<hb></hb>
+<img src="./public/logo.png" alt="logo" width="200" />
+
 
 To run the app:
 
@@ -18,12 +19,16 @@ $ npm install firebase
 $ npm start
 ```
 
-Like, dislike, and leaving review is only enabled for logged in users.  
-Non-logged in users can still browse through the website.  
-Log in through your Google Account using the Log in button and start posting reviews.  
-Like or dislike other reviews.  
-Search for your favorite artists on the home page.  
-Click on an album cover to listen to the album on Spotify.  
-
-Apollo works best on Google Chrome.  
+<h4>Features:</h4>
+<ul>
+  
+<li>Search for your favorite artists on the home page.</li>
+<li>Click on an album cover to listen to the album on Spotify.</li>
+<li>Log in through your Google Account using the Log in button and start posting reviews.</li>
+<li>Liking, disliking, and posting reviews are only enabled for logged in users.</li>
+<li>Non-logged in users can still browse through the website.</li>
+<li>Like or dislike other reviews.</li>
+<li>Apollo works best on Google Chrome.</li>
+  
+</ul>
 
