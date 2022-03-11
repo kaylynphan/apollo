@@ -47,18 +47,7 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
                 variant="outlined"
                 onChange={(event) => {setSearchQuery(event.target.value)}}
             />
-            {/*
-            <input
-                value={searchQuery}
-                onInput={(e) => setSearchQuery(e.target.value)}
-                type="text"
-                id="header-search"
-                placeholder="Enter an album you wish to see a review for"
-                name="s"
-            />
-            */}
-
-            {/*<button type="submit"><FaSearch/></button>*/}
+            
             
         </form>
     );
@@ -174,7 +163,6 @@ const Home = () => {
     return (
         
             <div className="Home">
-                <img className="logo" src="logo.png" alt="logo" width="500" />
                 <Search/>
             </div>
         

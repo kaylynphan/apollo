@@ -16,7 +16,6 @@ const ArtistProfile = () => {
     const bio = location.state.bio;
     const url = "https://www.weact.org/wp-content/uploads/2016/10/Blank-profile.png";
     //let str = ""
-    console.log(albums);
     const AlbumGrid = [];
     for(let element in albumlist){
         AlbumGrid.push(

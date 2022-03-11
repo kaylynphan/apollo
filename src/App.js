@@ -4,7 +4,8 @@ import Home from "./Home"
 import Login from "./Login"
 import { useState } from "react"
 import { signOut } from 'firebase/auth'
-import {auth} from "./firebase"
+import {auth, db} from "./firebase"
+import {collection} from "firebase/firestore"
 import AristPage from "./ArtistPage"
 
 function App (){
@@ -21,7 +22,10 @@ function App (){
     var errorCode = error.code;
     var errorMessage = error.message;
   });*/
+
     const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
+    const [user, setUser] = useState(localStorage.getItem("user"));
+    
     const signUserOut = () => {
         signOut(auth).then(() => {
             localStorage.clear()
@@ -29,11 +33,14 @@ function App (){
             window.location.pathname = "/login"
         })
     }
+    
     return (
     <Router>
-        <nav>
-            <Link to="/"> Home </ Link>
-            {!isAuth ? <Link to="/login">Login</Link> : <button onClick={signUserOut}>Log Out</button>}
+        <nav class="nav">
+            <img className="logo" src="logo.png" alt="logo"/>
+            <Link class="left" to="/"> Home </ Link>
+            {!isAuth ? <Link class="right" to="/login">Login</Link> : <button class="right" onClick={signUserOut}>Log Out</button>}<br/>
+            {isAuth ? <p class="indicatelogin">Posting as: {user} </p> : <p class="indicatelogin">You're not logged in.</p>}
         </ nav>
         <Routes>
             <Route path="/" element={<Home />} />
