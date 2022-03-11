@@ -43,7 +43,7 @@ const ArtistProfile = () => {
             <Typography variant="h3" textAlign="center">{artist} </Typography>
             <img src={testurl} alt={artist}/>
             <Typography variant="body1" textAlign="center">{bio}</Typography>
-            <Typography variant="h6" textAlign="center">Write a review on {artist}'s albums!</Typography>
+            <Typography variant="h5" textAlign="center">Write a review on {artist}'s albums!</Typography>
             
             <Grid container sx={{ justifyContent: 'center'}}>
                 <Grid item sx={{ width: 900, columns: 4, justifyContent: 'bottom' }}>
